@@ -1,11 +1,17 @@
 <!DOCTYPE html>
 <html lang="fr" style="width: 100%;">
 <!--
+    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    **********************************************************************************
+    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
     Merci de votre visite, vous avez pu découvrir une face cachée de mon portfolio :
     
-    Cheat code = L1 -> L2 -> Haut -> Bas -> Gauche -> Droite 
+    Cheat code = shift + h -> a -> alt gr + c -> shift + k 
 
-    Bon, maintenant que vous avez perdu votre temps, merci de fermer cette console ! <3
+    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    **********************************************************************************
+    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 -->
 
 <head>
@@ -146,7 +152,7 @@
                 <div class="row mt-20 mt-sm-0">
                     <div class="col px-10">
                         <h2 class="content-title mb-5">Expériences Professionnelles</h2>
-                        <table class="table card p-0 m-0">
+                        <table class="table table-striped card p-0 m-0">
                             <thead>
                                 <tr>
                                     <th class="text-center">Annéee</th>
@@ -181,7 +187,7 @@
                 <div class="row">
                     <div class="col px-10">
                         <h2 class="content-title mb-5 mt-10">Diplômes et Formations</h2>
-                        <table class="table card p-0 m-0">
+                        <table class="table table-striped card p-0 m-0">
                             <thead>
                                 <tr>
                                     <th class="text-center">Année</th>
@@ -220,15 +226,15 @@
                         <div class="card p-0">
                             <div class="content my-5">
                                 <div class="row">
-                                    <div class="col-sm-6">
+                                    <div class="col-md-6 d-none d-md-block">
                                         <video autoplay autobuffer loop muted playsinline
                                             style="width: 100%; height: 100%;"
-                                            class="giphy-embed img-fluid rounded-top d-none d-sm-block">
+                                            class="giphy-embed img-fluid rounded-top">
                                             <source type="video/mp4" src="/image/gif-ag7-project.mp4">
                                             <source type="video/webm" src="/image/gif-ag7-project.webm">
                                         </video>
                                     </div>
-                                    <div class="col-sm-6 p-10">
+                                    <div class="col-md-6 p-10">
                                         <h2 class="content-title"><i class="fa fa-tachometer mr-5"></i>AG7-Project</h2>
                                         <p class="text-left text-justify">
                                             Application web qui permet de gérer des projets selon la méthode
@@ -296,14 +302,14 @@
                         <div class="card p-0">
                             <div class="content my-5">
                                 <div class="row">
-                                    <div class="col-sm-6">
+                                    <div class="col-md-6 d-none d-md-block">
                                         <video autoplay loop muted playsinline style="width: 100%;"
                                             class="giphy-embed img-fluid rounded-top d-none d-sm-block">
                                             <source src="/image/gif-ag7-jobhunt.mp4" type="video/mp4">
                                             <source src="/image/gif-ag7-jobhunt.webm" type="video/webm">
                                         </video>
                                     </div>
-                                    <div class="col-sm-6 p-10">
+                                    <div class="col-md-6 p-10">
                                         <h2 class="content-title"><i class="fa fa-bolt mr-5"></i>AG7-JobHunt</h2>
                                         <p class="text-left text-justify">
                                             Application web qui permet de gérer des offres d'emploi pour les
@@ -371,14 +377,14 @@
                         <div class="card p-0">
                             <div class="content my-5">
                                 <div class="row">
-                                    <div class="col-sm-6">
+                                    <div class="col-md-6 d-none d-md-block">
                                         <video autoplay loop muted playsinline style="width: 100%;"
                                             class="giphy-embed img-fluid rounded-top d-none d-sm-block">
                                             <source src="/image/gif-ag7-geoapi.mp4" type="video/mp4">
                                             <source src="/image/gif-ag7-geoapi.webm" type="video/webm">
                                         </video>
                                     </div>
-                                    <div class="col-sm-6 p-10">
+                                    <div class="col-md-6 p-10">
                                         <h2 class="content-title"><i class="fa fa-map-marker mr-5"></i>AG7-GeoAPI</h2>
                                         <p class="text-left text-justify">
                                             API publique permettant d'obtenir des données sous le format <b>JSON</b>,
@@ -483,7 +489,24 @@
         console.clear();
 
     </script>
-
+    <script type="text/javascript">
+        /* Things to do once the DOM is loaded */
+        document.addEventListener("DOMContentLoaded", function () {
+            var code = "";
+            // Handle keydown events (overridden)
+            halfmoon.keydownHandler = function (event) {
+                event = event || window.event;
+                code += event.which;
+                console.log(code);
+                if (code.includes("1672651718671675")) {
+                    code = "";
+                    window.location.href = "hacked.html";
+                    event.preventDefault();
+                }
+                // You can handle other keydown events here using if or else-if statements
+            }
+        });
+    </script>
 </body>
 
 </html>
