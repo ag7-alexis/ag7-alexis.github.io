@@ -1,18 +1,5 @@
 <!DOCTYPE html>
 <html lang="fr" style="width: 100%;">
-<!--
-    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-    **********************************************************************************
-    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-
-    Merci de votre visite, vous avez pu découvrir une face cachée de mon portfolio :
-    
-    Cheat code = shift + h -> a -> alt gr + c -> shift + k 
-
-    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-    **********************************************************************************
-    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
--->
 
 <head>
     <meta charset="utf-8" />
@@ -96,15 +83,15 @@
                         <i class="fa fa-moon-o" aria-hidden="true"></i>
                     </span>
                 </li>
-                <li class="nav-item dropdown with-arrow">
+                <li id="nav-dropdown" class="nav-item dropdown with-arrow">
                     <span class="nav-link" data-toggle="dropdown" id="nav-link-dropdown-toggle">
                         Navigation
                         <i class="fa fa-angle-down ml-5" aria-hidden="true"></i>
                     </span>
                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="nav-link-dropdown-toggle">
-                        <span onclick="moveTo(1)" class="dropdown-item pointer">Présentation</span>
-                        <span onclick="moveTo(2)" class="dropdown-item pointer">Expérience</span>
-                        <span onclick="moveTo(3)" class="dropdown-item pointer">
+                        <span onclick="moveTo(1); closeDropdown()" class="dropdown-item pointer">Présentation</span>
+                        <span onclick="moveTo(2); closeDropdown()" class="dropdown-item pointer">Expérience</span>
+                        <span onclick="moveTo(3); closeDropdown()" class="dropdown-item pointer">
                             Projets
                             <strong class="badge badge-success float-right">New</strong>
                         </span>
@@ -487,26 +474,13 @@
         }
 
         console.clear();
-        console.log("Merci de votre visite, vous avez pu découvrir une face cachée de mon portfolio :");
-        console.log("Cheat code = shift + h -> a -> alt gr + c -> shift + k ");
 
     </script>
     <script type="text/javascript">
-        /* Things to do once the DOM is loaded */
-        document.addEventListener("DOMContentLoaded", function () {
-            var code = "";
-            // Handle keydown events (overridden)
-            halfmoon.keydownHandler = function (event) {
-                event = event || window.event;
-                code += event.which;
-                if (code.includes("1672651718671675")) {
-                    code = "";
-                    window.location.href = "hacked.html";
-                    event.preventDefault();
-                }
-                // You can handle other keydown events here using if or else-if statements
-            }
-        });
+        function closeDropdown() {
+            document.getElementById('nav-dropdown').classList.remove('show');
+            document.getElementById('nav-link-dropdown-toggle').classList.remove('active');
+        }
     </script>
 </body>
 
