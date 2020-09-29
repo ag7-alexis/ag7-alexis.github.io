@@ -474,7 +474,15 @@
             halfmoon.toggleDarkMode();
         }
 
-        new fullpage('#fullpage');
+
+        new fullpage('#fullpage', {
+            navigation: true,
+            responsiveWidth: 1100,
+            afterResponsive: function (isResponsive) { }
+        });
+
+
+
 
         function moveTo(id) {
             fullpage_api.moveTo(id);
