@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr" style="width: 100%;">
+<html lang="fr" style="width: 100%;" class="custom-theme">
 
 <head>
     <meta charset="utf-8" />
@@ -29,20 +29,27 @@
     <meta property="og:type" content="website">
 
     <link href="css/fullpage.min.css" rel="stylesheet" />
-    <link href="css/halfmoon.min.css" rel="stylesheet" />
+    <!-- <link href="css/halfmoon.min.css" rel="stylesheet" /> -->
+    <link href="css/halfmoon-variables.min.css" rel="stylesheet" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
 
     <style>
+        :root {
+            --primary-color: #466099;
+        }
+
         .section {
             text-align: center;
         }
 
         .fp-controlArrow.fp-next {
-            border-color: transparent transparent transparent #1890ff !important;
+            border-color: transparent transparent transparent var(--primary-color) !important;
+            right: 1px;
         }
 
         .fp-controlArrow.fp-prev {
-            border-color: transparent #1890ff transparent transparent !important;
+            left: 1px;
+            border-color: transparent var(--primary-color) transparent transparent !important;
         }
 
         #presentation {
@@ -55,11 +62,47 @@
             cursor: pointer;
         }
 
+        .page-wrapper {
+            position: unset !important;
+        }
+
+        .dark-mode .border-right-md {
+            border-right: 1px solid rgba(255, 255, 255, .2);
+        }
+
+        .border-bottom-sm {
+            border-bottom: 1px solid rgba(0, 0, 0, .2);
+        }
+
+        .border-right-md {
+            border-right: 1px solid rgba(0, 0, 0, .2);
+        }
+
+        .border-bottom-sm {
+            border-bottom: none;
+        }
+
         @media(max-width: 576px) {
 
             .table td,
             .table th {
                 padding: 1rem 0.2rem;
+            }
+
+            .card {
+                margin: 1rem;
+            }
+
+            .border-right-md {
+                border-right: none !important;
+            }
+
+            .dark-mode .border-bottom-sm {
+                border-bottom: 1px solid rgba(255, 255, 255, .2) !important;
+            }
+
+            .border-bottom-sm {
+                border-bottom: 1px solid rgba(0, 0, 0, .2);
             }
         }
     </style>
@@ -67,9 +110,9 @@
 
 <body data-dm-shortcut-enabled="true" data-set-preferred-theme-onload="true">
     <div class="page-wrapper with-navbar">
-        <nav id="header" class="navbar">
+        <nav id="header" class="navbar bg-primary-lm">
 
-            <span onclick="moveTo(1)" class="font-size-16 navbar-brand text-uppercase pointer">
+            <span onclick="moveTo(1)" class="font-size-16 navbar-brand text-uppercase pointer text-white-lm">
                 Alexis Guay
             </span>
             <!-- Navbar text -->
@@ -84,7 +127,7 @@
                     </span>
                 </li>
                 <li id="nav-dropdown" class="nav-item dropdown with-arrow">
-                    <span class="nav-link" data-toggle="dropdown" id="nav-link-dropdown-toggle">
+                    <span class="nav-link text-white-lm" data-toggle="dropdown" id="nav-link-dropdown-toggle">
                         Navigation
                         <i class="fa fa-angle-down ml-5" aria-hidden="true"></i>
                     </span>
@@ -95,7 +138,7 @@
                             Projets
                             <strong class="badge badge-success float-right">New</strong>
                         </span>
-                        <span onclick="moveTo(4)" class="dropdown-item pointer">Contact</span>
+                        <span onclick="moveTo(4); closeDropdown()" class="dropdown-item pointer">Contact</span>
                     </div>
                 </li>
             </ul>
@@ -121,7 +164,7 @@
                             Les principales technologies que j'ai été amené à utiliser sont le <b>Java (Spring)</b>,
                             <b>Angular</b> ainsi que <b>PHP (Wordpress)</b> et un peu de <b>Javascript</b>.
                         </p>
-                        <p class="mx-auto w-full text-justify text-wrap px-10 d-none d-sm-block">
+                        <p class="mx-auto w-full text-justify text-wrap px-10">
                             En possession d'un <abbr class="text-decoration-none"
                                 title="Service Informatiques aux Organisations"><b>BTS SIO</b></abbr> option <abbr
                                 class="text-decoration-none"
@@ -206,23 +249,23 @@
                 </div>
 
             </div>
-            <div id="project" class="section content pt-10">
+            <div id="project" class="section pt-10 bg-light-lm fp-auto-height-responsive">
                 <!-- AG7-Project-->
                 <div class="slide">
                     <div class="mx-auto mw-full">
                         <div class="card p-0">
+                            <h2 class="card-title mt-10 mb-5"><i class="fa fa-tachometer mr-5"></i>AG7-Project</h2>
                             <div class="content my-5">
                                 <div class="row">
-                                    <div class="col-md-6 d-none d-md-block">
+                                    <div class="col-md-6">
                                         <video autoplay autobuffer loop muted playsinline
-                                            style="width: 100%; height: 100%;"
                                             class="shadow giphy-embed img-fluid rounded-top">
                                             <source type="video/mp4" src="/image/gif-ag7-project.mp4">
                                             <source type="video/webm" src="/image/gif-ag7-project.webm">
                                         </video>
                                     </div>
                                     <div class="col-md-6 p-10">
-                                        <h2 class="content-title"><i class="fa fa-tachometer mr-5"></i>AG7-Project</h2>
+
                                         <p class="text-left text-justify">
                                             Application web qui permet de gérer des projets selon la méthode
                                             <b>Kanban</b>.
@@ -244,10 +287,9 @@
                                 </div>
                             </div>
 
-                            <div class="content d-none d-sm-block">
-
+                            <div class="content">
                                 <div class="row">
-                                    <div class="col-sm-4 border-right">
+                                    <div class="col-sm-4 border-right-md border-bottom-sm">
                                         <h3 class="text-center content-title">Front-End</h3>
                                         <p class="text-left pl-5  text-justify">Le Front-End est fait avec <b>Angular
                                                 8</b> avec la précieuse aide de
@@ -257,7 +299,7 @@
                                             target="_blank">
                                             <i class="fa fa-github mr-5"></i>Github du Front-End</a>
                                     </div>
-                                    <div class="col-sm-4 border-right">
+                                    <div class="col-sm-4 border-right-md border-bottom-sm">
                                         <h3 class="text-center content-title">Back-End</h5>
                                             <p class="text-left pl-5  text-justify">La partie Back-End est réalisée en
                                                 <b>Java 11</b> avec le Framework <b>Spring</b>. J'utilise principalement
@@ -287,17 +329,18 @@
                 <div class="slide">
                     <div class="mx-auto mw-full">
                         <div class="card p-0">
+                            <h2 class="card-title mt-10 mb-5"><i class="fa fa-bolt mr-5"></i>AG7-JobHunt</h2>
                             <div class="content my-5">
                                 <div class="row">
-                                    <div class="col-md-6 d-none d-md-block">
-                                        <video autoplay loop muted playsinline style="width: 100%;"
-                                            class="shadow giphy-embed img-fluid rounded-top d-none d-sm-block">
+                                    <div class="col-md-6">
+                                        <video autoplay loop muted playsinline
+                                            class="shadow giphy-embed img-fluid rounded-top">
                                             <source src="/image/gif-ag7-jobhunt.mp4" type="video/mp4">
                                             <source src="/image/gif-ag7-jobhunt.webm" type="video/webm">
                                         </video>
                                     </div>
                                     <div class="col-md-6 p-10">
-                                        <h2 class="content-title"><i class="fa fa-bolt mr-5"></i>AG7-JobHunt</h2>
+
                                         <p class="text-left text-justify">
                                             Application web qui permet de gérer des offres d'emploi pour les
                                             développeurs.
@@ -320,10 +363,10 @@
                                 </div>
                             </div>
 
-                            <div class="content d-none d-sm-block">
+                            <div class="content">
 
                                 <div class="row">
-                                    <div class="col-sm-8 border-right">
+                                    <div class="col-sm-8 border-right-md border-bottom-sm">
                                         <h3 class="text-center content-title">Application</h5>
                                             <p class="text-left pl-5  text-justify">
                                                 Cette application est réalisée en <b>Java 11</b> avec le FrameWork
@@ -362,17 +405,17 @@
                 <div class="slide">
                     <div class="mx-auto mw-full">
                         <div class="card p-0">
+                            <h2 class="card-title mt-10 mb-5"><i class="fa fa-map-marker mr-5"></i>AG7-GeoAPI</h2>
                             <div class="content my-5">
                                 <div class="row">
-                                    <div class="col-md-6 d-none d-md-block">
-                                        <video autoplay loop muted playsinline style="width: 100%;"
-                                            class="shadow giphy-embed img-fluid rounded-top d-none d-sm-block">
+                                    <div class="col-md-6">
+                                        <video autoplay loop muted playsinline
+                                            class="shadow giphy-embed img-fluid rounded-top">
                                             <source src="/image/gif-ag7-geoapi.mp4" type="video/mp4">
                                             <source src="/image/gif-ag7-geoapi.webm" type="video/webm">
                                         </video>
                                     </div>
                                     <div class="col-md-6 p-10">
-                                        <h2 class="content-title"><i class="fa fa-map-marker mr-5"></i>AG7-GeoAPI</h2>
                                         <p class="text-left text-justify">
                                             API publique permettant d'obtenir des données sous le format <b>JSON</b>,
                                             tel que la liste des régions de France ou encore la liste des communes
@@ -393,10 +436,9 @@
                                 </div>
                             </div>
 
-                            <div class="content d-none d-sm-block">
-
+                            <div class="content">
                                 <div class="row">
-                                    <div class="col-sm-4 border-right">
+                                    <div class="col-sm-4 border-right-md border-bottom-sm">
                                         <h3 class="text-center content-title">Documentation</h3>
                                         <p class="text-left pl-5  text-justify">La documentation est faite avec
                                             <b>Angular 8</b> avec la précieuse aide de
@@ -406,7 +448,7 @@
                                             target="_blank">
                                             <i class="fa fa-github mr-5"></i>Github du Front-End</a>
                                     </div>
-                                    <div class="col-sm-4 border-right">
+                                    <div class="col-sm-4 border-right-md border-bottom-sm">
                                         <h3 class="text-center content-title">API REST</h5>
                                             <p class="text-left pl-5 text-justify">L'API est réalisée en <b>Java 11</b>
                                                 avec
@@ -469,9 +511,7 @@
 
 
         new fullpage('#fullpage', {
-            navigation: true,
-            responsiveWidth: 1100,
-            afterResponsive: function (isResponsive) { }
+            responsiveWidth: 769
         });
 
 
