@@ -9,7 +9,6 @@
     <link rel="icon" type="img/png" href="favicon.png">
     <link rel="shortcut icon" href="favicon.ico">
     <title>Portfolio Développeur Web | Alexis Guay</title>
-    <link rel="canonical" href="https://ag7-alexis.github.io/">
 
     <meta name="Description" content="Portfolio Développeur Web | Je suis un jeune développeur 
     étudiant en Licence Professionnelle MIW et titulaire d'un BTS SIO option SLAM. Je suis autodidacte et polyvalent, 
@@ -29,86 +28,89 @@
     <meta property="og:type" content="website">
 
     <link href="css/fullpage.min.css" rel="stylesheet" />
-    <!-- <link href="css/halfmoon.min.css" rel="stylesheet" /> -->
     <link href="css/halfmoon-variables.min.css" rel="stylesheet" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
 
     <style>
         :root {
-            --primary-color: #466099;
+            --primary-color: #466099
         }
 
         .section {
-            text-align: center;
+            text-align: center
         }
 
         .fp-controlArrow.fp-next {
             border-color: transparent transparent transparent var(--primary-color) !important;
-            right: 1px;
+            right: 1px
         }
 
         .fp-controlArrow.fp-prev {
             left: 1px;
-            border-color: transparent var(--primary-color) transparent transparent !important;
+            border-color: transparent var(--primary-color) transparent transparent !important
         }
 
         #presentation {
             background-image: url(img/bg.webp);
             background-repeat: no-repeat;
-            background-size: cover;
+            background-size: cover
         }
 
         .pointer {
-            cursor: pointer;
+            cursor: pointer
         }
 
         .page-wrapper {
-            position: unset !important;
+            position: unset !important
         }
 
         .dark-mode .border-right-md {
-            border-right: 1px solid rgba(255, 255, 255, .2);
+            border-right: 1px solid rgba(255, 255, 255, .2)
         }
 
         .border-bottom-sm {
-            border-bottom: 1px solid rgba(0, 0, 0, .2);
+            border-bottom: 1px solid rgba(0, 0, 0, .2)
         }
 
         .border-right-md {
-            border-right: 1px solid rgba(0, 0, 0, .2);
+            border-right: 1px solid rgba(0, 0, 0, .2)
         }
 
         .border-bottom-sm {
-            border-bottom: none;
+            border-bottom: none
         }
 
-        @media(max-width: 576px) {
+        @media(max-width:576px) {
 
             .table td,
             .table th {
-                padding: 1rem 0.2rem;
+                padding: 1rem .2rem
             }
 
             .card {
-                margin: 1rem;
+                margin: 1rem
             }
 
             .border-right-md {
-                border-right: none !important;
+                border-right: none !important
             }
 
             .dark-mode .border-bottom-sm {
-                border-bottom: 1px solid rgba(255, 255, 255, .2) !important;
+                border-bottom: 1px solid rgba(255, 255, 255, .2) !important
             }
 
             .border-bottom-sm {
-                border-bottom: 1px solid rgba(0, 0, 0, .2);
+                border-bottom: 1px solid rgba(0, 0, 0, .2)
             }
         }
     </style>
 </head>
 
 <body data-dm-shortcut-enabled="true" data-set-preferred-theme-onload="true">
+    <h1 class="d-none">
+        développeur, web, portfolio, cv, gap, valence, montélimar, informatique, dev, front-end, back-end, java, spring,
+        angular, php, html, css, java jee
+    </h1>
     <div class="page-wrapper with-navbar">
         <nav id="header" class="navbar bg-primary-lm">
             <span onclick="moveTo(1)" class="font-size-16 navbar-brand text-uppercase pointer text-white-lm">
@@ -145,10 +147,13 @@
         <div id="fullpage">
             <div id="presentation" class="section">
                 <div class="row">
-                    <div class="card col-md-6 col-sm-10 col mx-auto p-0 p-sm-10">
-                        <h1 class="card-title font-size-24 mt-5 text-pr">
-                            Développeur Web
-                        </h1>
+                    <div class="card col-md-6 col-sm-10 col mx-auto p-0">
+                        <div class="px-card py-10 border-bottom bg-primary-lm rounded-top">
+                            <h2 class="card-title text-white-lm m-0">
+                                Développeur Web
+                            </h2>
+                        </div>
+
                         <p class="mx-auto w-full text-justify text-wrap px-10 mb-5">
                             Je m'appelle Alexis, je suis un <b>jeune développeur</b> de 20 ans. Passionné par le monde
                             du
@@ -182,7 +187,7 @@
                         <h2 class="content-title mb-5">Expériences Professionnelles</h2>
                         <table class="table mx-auto table-striped w-full w-md-three-quarter card p-0 m-0">
                             <thead>
-                                <tr>
+                                <tr class="text-white-lm bg-primary-lm">
                                     <th class="text-center">Annéee</th>
                                     <th class="text-center">Entreprise</th>
                                     <th class="text-center">Réalisation</th>
@@ -217,7 +222,7 @@
                         <h2 class="content-title mb-5 mt-10">Diplômes et Formations</h2>
                         <table class="table mx-auto table-striped w-full w-md-three-quarter card p-0 m-0">
                             <thead>
-                                <tr>
+                                <tr class="text-white-lm bg-primary-lm">
                                     <th class="text-center">Année</th>
                                     <th class="text-center">Diplôme</th>
                                     <th class="text-center">Status</th>
@@ -251,7 +256,12 @@
                 <div class="slide">
                     <div class="mx-auto mw-full">
                         <div class="card p-0">
-                            <h2 class="card-title mt-10 mb-5"><i class="fa fa-tachometer mr-5"></i>AG7-Project</h2>
+                            <div class="px-card py-10 border-bottom bg-primary-lm rounded-top">
+                                <h2 class="card-title text-white-lm m-0">
+                                    <i class="fa fa-tachometer mr-5"></i>AG7-Project
+                                </h2>
+                            </div>
+
                             <div class="content my-5">
                                 <div class="row align-items-center">
                                     <div class="col-md-6">
@@ -322,7 +332,11 @@
                 <div class="slide">
                     <div class="mx-auto mw-full">
                         <div class="card p-0">
-                            <h2 class="card-title mt-10 mb-5"><i class="fa fa-bolt mr-5"></i>AG7-JobHunt</h2>
+                            <div class="px-card py-10 border-bottom bg-primary-lm rounded-top">
+                                <h2 class="card-title text-white-lm m-0">
+                                    <i class="fa fa-bolt mr-5"></i>AG7-JobHunt
+                                </h2>
+                            </div>
                             <div class="content my-5">
                                 <div class="row align-items-center">
                                     <div class="col-md-6">
@@ -389,7 +403,11 @@
                 <div class="slide">
                     <div class="mx-auto mw-full">
                         <div class="card p-0">
-                            <h2 class="card-title mt-10 mb-5"><i class="fa fa-map-marker mr-5"></i>AG7-GeoAPI</h2>
+                            <div class="px-card py-10 border-bottom bg-primary-lm rounded-top">
+                                <h2 class="card-title text-white-lm m-0">
+                                    <i class="fa fa-map-marker mr-5"></i>AG7-GeoAPI
+                                </h2>
+                            </div>
                             <div class="content my-5">
                                 <div class="row align-items-center">
                                     <div class="col-md-6">
@@ -457,15 +475,23 @@
                 </div>
             </div>
             <div class="section">
-                <div class="card p-0 w-full w-sm-half mx-auto">
-                    <h2 class="card-title mt-10">Inspiration</h2>
+                <div class="card p-0 w-full w-sm-three-quarter w-md-half mx-auto">
+                    <div class="px-card py-10 border-bottom bg-primary-lm rounded-top">
+                        <h2 class="card-title text-white-lm m-0">
+                            Inspiration
+                        </h2>
+                    </div>
                     <blockquote>
                         <q>Celui qui ne progresse pas chaque jour, recule chaque jour.</q>
                         <footer>- Confucius</footer>
                     </blockquote>
                 </div>
-                <div class="card p-0 w-full w-sm-half mx-auto">
-                    <h2 class="card-title mt-10">Contact</h2>
+                <div class="card p-0 w-full w-sm-three-quarter w-md-half mx-auto">
+                    <div class="px-card py-10 border-bottom bg-primary-lm rounded-top">
+                        <h2 class="card-title text-white-lm m-0">
+                            Contact
+                        </h2>
+                    </div>
                     <p>Mail : <a href="mailto:guay.alexis7@gmail.com">guay.alexis7@gmail.com</a></p>
                     <p>LinkedIn <i class="text-primary fa fa-linkedin"></i> : <a rel="noopener"
                             href="https://www.linkedin.com/in/guayalexis/" target="_blank">Guay Alexis</a></p>
