@@ -187,6 +187,11 @@ article img {
   display: inline-block;
 }
 
+.region-sidebar input {
+  height: 2em;
+  margin-bottom: 10px;
+}
+
 .region-sidebar input[type="submit"] {
   background-color: #5677fc;
   border-radius: 2px;
