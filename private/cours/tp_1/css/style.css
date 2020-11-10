@@ -17,7 +17,7 @@ body {
 }
 
 .container {
-  max-width: 960px;
+  max-width: 64rem;
   margin: 0 auto;
 }
 
@@ -285,7 +285,7 @@ footer {
   }
 
   .main-article img {
-    height: 538px;
+    height: 561px;
     width: 100%;
   }
   /* FIN article principal */
