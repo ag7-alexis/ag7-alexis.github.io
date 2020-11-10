@@ -1,3 +1,5 @@
+/* DEBUT general */
+
 * {
   padding: 0;
   margin: 0;
@@ -19,11 +21,6 @@ body {
   margin: 0 auto;
 }
 
-.content-article > a:last-child::before {
-  content: "\003e";
-  margin-right: 3px;
-}
-
 .px-5 {
   padding: 0 5px;
 }
@@ -32,6 +29,14 @@ body {
   padding: 10px;
 }
 
+article img {
+  width: 100%;
+  height: 100%;
+}
+
+/* FIN general */
+
+/* DEBUT header + navigation  */
 header {
   display: flex;
   justify-content: space-between;
@@ -41,8 +46,8 @@ header {
 
 .logo {
   width: 100%;
-  max-height: 100%;
-  max-width: 240px;
+  max-height: 62px;
+  max-width: 200px;
 }
 
 header > a {
@@ -77,6 +82,9 @@ header nav a:hover {
   color: #fff;
 }
 
+/* FIN header + navigation */
+
+/* DEBUT Grid systeme */
 .block {
   display: flex;
   width: 100%;
@@ -103,11 +111,10 @@ header nav a:hover {
   width: 100%;
   box-sizing: border-box;
 }
-article img {
-  width: 100%;
-  height: 100%;
-}
+/* FIN Grid systeme */
 
+/* DEBUT haut de page */
+/* DEBUT article principal */
 .region-top a {
   text-decoration: none;
   color: white;
@@ -137,7 +144,9 @@ article img {
   max-width: 300px;
   color: white;
 }
+/* FIN article principal */
 
+/* DEBUT article secondaire */
 .second-article a {
   font-size: 0.7em;
 }
@@ -150,6 +159,14 @@ article img {
   background-color: #5c6bc0;
 }
 
+.content-article > a:last-child::before {
+  content: "\003e";
+  margin-right: 3px;
+}
+/* FIN article secondaire */
+/* FIN haut de page */
+
+/* DEBUT milieu de page */
 .region-main {
   clear: both;
   margin-top: 2em;
@@ -170,6 +187,7 @@ article img {
   background-color: #eaeaea;
 }
 
+/* DEBUT sidebar*/
 .region-sidebar {
   background-color: #f5f5f5;
   padding: 2em;
@@ -182,6 +200,7 @@ article img {
   font-size: 1em;
 }
 
+/* DEBUT formulaire contact */
 .region-sidebar label {
   width: 100px;
   display: inline-block;
@@ -200,6 +219,7 @@ article img {
   text-transform: uppercase;
   border: 1px solid transparent;
   color: white;
+  height: 3em;
   margin: 1em auto 0 1em;
   display: block;
   font-size: 0.9em;
@@ -208,13 +228,21 @@ article img {
 .region-sidebar input[type="submit"]:hover {
   background-color: #8399f1;
 }
+/* FIN formulaire contact */
+/* FIN sidebar */
+/* FIN milieu de page */
+
+/* DEBUT footer */
 footer {
   clear: both;
   background-color: black;
   height: 50px;
 }
+/* FIN footer */
+
 /* Tablette */
 @media (min-width: 40rem) {
+  /* DEBUT Grid system */
   .block > .content-article {
     width: 66%;
   }
@@ -222,7 +250,9 @@ footer {
   .block > .img-article {
     width: 34%;
   }
+  /* FIN Grid system */
 
+  /* DEBUT article principal*/
   .main-article article {
     height: 500px;
   }
@@ -230,7 +260,9 @@ footer {
   .main-article h1 {
     margin: 20px 0;
   }
+  /* FIN article principal*/
 
+  /* DEBUT milieu de page */
   .region-main .img-article {
     width: 34% !important;
   }
@@ -238,6 +270,7 @@ footer {
   .region-main .content-article {
     width: 66% !important;
   }
+  /* FIN milieu de page */
 }
 
 /* PC */
@@ -246,10 +279,18 @@ footer {
     width: 100%;
   }
 
+  /* DEBUT article principal */
   .main-article article {
     height: auto;
   }
 
+  .main-article img {
+    height: 538px;
+    width: 100%;
+  }
+  /* FIN article principal */
+
+  /* DEBUT Grid system */
   .block > .block-secondaire {
     width: 34%;
   }
@@ -258,19 +299,17 @@ footer {
     width: 66%;
   }
 
-  .main-article img {
-    height: 538px;
-    width: 100%;
-  }
-
-  .region-sidebar input[type="submit"] {
-    margin: 1em auto 0 auto;
-  }
-
   .block > .img-article {
     width: 100%;
   }
   .block > .content-article {
     width: 100%;
   }
+  /* FIN Grid system */
+
+  /* DEBUT sidebar */
+  .region-sidebar input[type="submit"] {
+    margin: 1em auto 0 auto;
+  }
+  /* FIN sidebar */
 }
