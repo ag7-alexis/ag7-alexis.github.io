@@ -413,6 +413,10 @@ template {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.fa-search:before {
+  content: "\f002";
+}
+
 .fa-twitter:before {
   content: "\f099";
 }
