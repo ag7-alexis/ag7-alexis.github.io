@@ -8,9 +8,9 @@
     <link rel="icon" type="img/x-icon" href="favicon.ico">
     <link rel="icon" type="img/png" href="favicon.png">
     <link rel="shortcut icon" href="favicon.ico">
-    <title>Portfolio Développeur Web | Alexis Guay</title>
+    <title>Développeur Web | Alexis Guay</title>
 
-    <meta name="Description" content="Portfolio Développeur Web | Je suis un jeune développeur 
+    <meta name="Description" content="Développeur Web | Je suis un jeune développeur 
     étudiant en Licence Professionnelle MIW et titulaire d'un BTS SIO option SLAM. Je suis autodidacte et polyvalent, 
     attiré par Java(Spring) et Angular.">
     <meta name="google-site-verification" content="IV6o-hrDZlITlLAI_JzX7QUOI6Tfh2Fa6gxl1bfLmdA" />
@@ -26,12 +26,27 @@
     <meta property="og:locale" content="fr_FR">
     <meta property="og:url" content="https://ag7-alexis.github.io/">
     <meta property="og:type" content="website">
+    <template>
 
- <link href="css/fullpage.min.css" rel="stylesheet" /><link href="css/halfmoon-variables.min.css" rel="stylesheet" /><link rel="stylesheet" href="css/style.css">
- <style>#presentation{ background-image:url(img/bg.webp); background-repeat:no-repeat; background-size:cover; background-position:center;} </style><script async src="https://www.googletagmanager.com/gtag/js?id=G-WPL50YBLKJ"></script>    <script>window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'G-WPL50YBLKJ'); </script>
+    </template>
+
+    <link href="css/fullpage.min.css" rel="stylesheet" />
+    <link href="css/halfmoon-variables.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        #presentation {
+            background-image: url(img/bg.webp);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WPL50YBLKJ"></script>
+    <script>window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'G-WPL50YBLKJ'); </script>
 </head>
 
 <body data-dm-shortcut-enabled="true" data-set-preferred-theme-onload="true">
+
     <h1 class="d-none">
         développeur, web, portfolio, cv, gap, valence, montélimar, informatique, dev, front-end, back-end, java, spring,
         angular, php, html, css, java jee
@@ -62,7 +77,7 @@
                         <span onclick="moveTo(2); closeDropdown()" class="dropdown-item pointer">Expérience</span>
                         <span onclick="moveTo(3); closeDropdown()" class="dropdown-item pointer">
                             Projets
-                            <strong class="badge badge-success float-right">New</strong>
+                            <strong class="badge badge-success text-white float-right">New</strong>
                         </span>
                         <span onclick="moveTo(4); closeDropdown()" class="dropdown-item pointer">Contact</span>
                     </div>
@@ -90,17 +105,6 @@
                             <strong>Front-End</strong>. Les principales technologies que j'ai été amené à utiliser sont
                             le <strong>Java (Spring)</strong>, <strong>Angular</strong> ainsi que
                             <strong>PHP (Wordpress)</strong> et un peu de <strong>Javascript</strong>.
-                        </p>
-                        <p class="mx-auto w-full text-justify text-wrap px-10">
-                            En possession d'un <abbr class="text-decoration-none"
-                                title="Service Informatiques aux Organisations"><strong>BTS SIO</strong></abbr> option
-                            <abbr class="text-decoration-none"
-                                title="Solutions Logicielles et Applications Métier"><strong>SLAM</strong></abbr>
-                            réalisée à
-                            Valence,
-                            j'ai décidé de poursuivre mes études en <abbr class="text-decoration-none"
-                                title="Mobilité, Internet, Web"><strong>Licence professionnelle MIW</strong></abbr> à
-                            Gap.
                         </p>
                         <a class="btn btn-success text-white mb-5" href="CV_GUAY_Alexis.pdf">Mon CV en PDF</a>
                     </div>
@@ -212,11 +216,8 @@
                                             Et pour la partie Front-End de mettre en place du <strong>Lazy
                                                 Loading</strong>.
                                         </p>
-                                        <p class="text-muted text-left mb-0">Me contacter par
-                                            <a href="mailto:guay.alexis7@gmail.com">mail</a> ou via
-                                            <a rel="noopener" href="https://www.linkedin.com/in/guayalexis/"
-                                                target="_blank">Linkedin</a> pour avoir le lien.
-                                        </p>
+                                        <button class="btn btn-success text-white"
+                                            onclick="openModal('modal-ag7-chat')">Découvrir l'application</button>
                                     </div>
                                 </div>
                             </div>
@@ -232,20 +233,20 @@
                                     </div>
                                     <div class="col-sm-4 border-right-md border-bottom-sm">
                                         <h3 class="text-center content-title">Back-End</h3>
-                                            <p class="text-left pl-5  text-justify">La partie Back-End est réalisée en
-                                                <strong>Java 11</strong> avec le Framework <strong>Spring</strong>.
-                                                J'utilise ici
-                                                <strong>SpringBoot</strong>, <strong>Spring Security</strong> ainsi que
-                                                <strong>Spring Webflux</strong>.
-                                            </p>
+                                        <p class="text-left pl-5  text-justify">La partie Back-End est réalisée en
+                                            <strong>Java 11</strong> avec le Framework <strong>Spring</strong>.
+                                            J'utilise ici
+                                            <strong>SpringBoot</strong>, <strong>Spring Security</strong> ainsi que
+                                            <strong>Spring Webflux</strong>.
+                                        </p>
                                     </div>
                                     <div class="col-sm-4">
                                         <h3 class="text-center content-title">Base de données</h3>
-                                            <p class="text-left pl-5  text-justify">J'utilise une base de données
-                                                <strong>NoSQL</strong> ave <strong>MongoDB</strong>
-                                                , la persistance des données est assuré à l'aide de
-                                                <strong>JPA</strong> et <strong>Hibernate</strong>.
-                                            </p>
+                                        <p class="text-left pl-5  text-justify">J'utilise une base de données
+                                            <strong>NoSQL</strong> ave <strong>MongoDB</strong>
+                                            , la persistance des données est assuré à l'aide de
+                                            <strong>JPA</strong> et <strong>Hibernate</strong>.
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -284,11 +285,8 @@
                                                 Security</strong>
                                             pour sécuriser les requêtes avec des <strong>JWT</strong>.
                                         </p>
-                                        <p class="text-muted text-left mb-0">Me contacter par
-                                            <a href="mailto:guay.alexis7@gmail.com">mail</a> ou via
-                                            <a rel="noopener" href="https://www.linkedin.com/in/guayalexis/"
-                                                target="_blank">Linkedin</a> pour avoir le lien.
-                                        </p>
+                                        <button class="btn btn-success text-white"
+                                            onclick="openModal('modal-ag7-project')">Découvrir l'application</button>
                                     </div>
                                 </div>
                             </div>
@@ -307,26 +305,26 @@
                                     </div>
                                     <div class="col-sm-4 border-right-md border-bottom-sm">
                                         <h3 class="text-center content-title">Back-End</h3>
-                                            <p class="text-left pl-5  text-justify">La partie Back-End est réalisée en
-                                                <strong>Java 11</strong> avec le Framework <strong>Spring</strong>.
-                                                J'utilise principalement
-                                                <strong>SpringBoot</strong> et <strong>SpringSecurity</strong> pour
-                                                sécuriser les requêtes
-                                                avec
-                                                des <strong>JWT</strong>.
-                                            </p>
-                                            <a rel="noopener"
-                                                href="https://github.com/ag7-alexis/public-ag7-project-backend"
-                                                target="_blank">
-                                                <i class="fa fa-github mr-5"></i>Github du Back-End</a>
+                                        <p class="text-left pl-5  text-justify">La partie Back-End est réalisée en
+                                            <strong>Java 11</strong> avec le Framework <strong>Spring</strong>.
+                                            J'utilise principalement
+                                            <strong>SpringBoot</strong> et <strong>SpringSecurity</strong> pour
+                                            sécuriser les requêtes
+                                            avec
+                                            des <strong>JWT</strong>.
+                                        </p>
+                                        <a rel="noopener"
+                                            href="https://github.com/ag7-alexis/public-ag7-project-backend"
+                                            target="_blank">
+                                            <i class="fa fa-github mr-5"></i>Github du Back-End</a>
                                     </div>
                                     <div class="col-sm-4">
                                         <h3 class="text-center content-title">Base de données</h3>
-                                            <p class="text-left pl-5  text-justify">J'utilise une base de données
-                                                <strong>PostgreSQL</strong>, la persistance des données est assuré à
-                                                l'aide de
-                                                <strong>JPA</strong> et <strong>Hibernate</strong>.
-                                            </p>
+                                        <p class="text-left pl-5  text-justify">J'utilise une base de données
+                                            <strong>PostgreSQL</strong>, la persistance des données est assuré à
+                                            l'aide de
+                                            <strong>JPA</strong> et <strong>Hibernate</strong>.
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -366,11 +364,8 @@
                                                 Security</strong> et par la même
                                             occasion, j'ai pu travailler avec une <strong>API extérieure</strong>.
                                         </p>
-                                        <p class="text-muted text-left mb-0">Me contacter par
-                                            <a href="mailto:guay.alexis7@gmail.com">mail</a> ou via
-                                            <a rel="noopener" href="https://www.linkedin.com/in/guayalexis/"
-                                                target="_blank">Linkedin</a> pour avoir le lien.
-                                        </p>
+                                        <button class="btn btn-success text-white"
+                                            onclick="openModal('modal-ag7-jobhunt')">Découvrir l'application</button>
                                     </div>
                                 </div>
                             </div>
@@ -378,32 +373,31 @@
                                 <div class="row">
                                     <div class="col-sm-8 border-right-md border-bottom-sm">
                                         <h3 class="text-center content-title">Application</h3>
-                                            <p class="text-left pl-5  text-justify">
-                                                Cette application est réalisée en <strong>Java 11</strong> avec le
-                                                FrameWork
-                                                <strong>Spring</strong> dont j'utilise principalemet <strong>Spring
-                                                    MVC</strong>
-                                                et <strong>Spring Security</strong>. Les vues sont faites avec
-                                                <strong>Thymeleaf</strong> et
-                                                <strong>Bootstrap</strong>. Et j'ai ajouté
-                                                <a rel="noopener" target="_blank"
-                                                    href="https://jobs.github.com/api">l'API
-                                                    de recherche
-                                                    d'emploi de github</a> pour avoir du contenu.
-                                            </p>
-                                            <a rel="noopener" href="https://github.com/ag7-alexis/public-ag7-jobhunt"
-                                                target="_blank">
-                                                <i class="fa fa-github mr-5"></i>
-                                                Github de l'application
-                                            </a>
+                                        <p class="text-left pl-5  text-justify">
+                                            Cette application est réalisée en <strong>Java 11</strong> avec le
+                                            FrameWork
+                                            <strong>Spring</strong> dont j'utilise principalemet <strong>Spring
+                                                MVC</strong>
+                                            et <strong>Spring Security</strong>. Les vues sont faites avec
+                                            <strong>Thymeleaf</strong> et
+                                            <strong>Bootstrap</strong>. Et j'ai ajouté
+                                            <a rel="noopener" target="_blank" href="https://jobs.github.com/api">l'API
+                                                de recherche
+                                                d'emploi de github</a> pour avoir du contenu.
+                                        </p>
+                                        <a rel="noopener" href="https://github.com/ag7-alexis/public-ag7-jobhunt"
+                                            target="_blank">
+                                            <i class="fa fa-github mr-5"></i>
+                                            Github de l'application
+                                        </a>
                                     </div>
                                     <div class="col-sm-4">
                                         <h3 class="text-center content-title">Base de données</h3>
-                                            <p class="text-left pl-5  text-justify">J'utilise une base de données
-                                                <strong>PostgreSQL</strong>, la persistance des données est assuré à
-                                                l'aide de
-                                                <strong>JPA</strong> et <strong>Hibernate</strong>.
-                                            </p>
+                                        <p class="text-left pl-5  text-justify">J'utilise une base de données
+                                            <strong>PostgreSQL</strong>, la persistance des données est assuré à
+                                            l'aide de
+                                            <strong>JPA</strong> et <strong>Hibernate</strong>.
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -440,11 +434,8 @@
                                             relativement cours sur une base de données beaucoup plus rempli comparé
                                             a celle que j'ai l'habitude d'utiliser (+ 5000 enregistrements).
                                         </p>
-                                        <p class="text-muted text-left mb-0">Me contacter par
-                                            <a href="mailto:guay.alexis7@gmail.com">mail</a> ou via
-                                            <a rel="noopener" href="https://www.linkedin.com/in/guayalexis/"
-                                                target="_blank">Linkedin</a> pour avoir le lien.
-                                        </p>
+                                        <button class="btn btn-success text-white"
+                                            onclick="openModal('modal-ag7-geoapi')">Découvrir l'application</button>
                                     </div>
                                 </div>
                             </div>
@@ -463,26 +454,26 @@
                                     </div>
                                     <div class="col-sm-4 border-right-md border-bottom-sm">
                                         <h3 class="text-center content-title">API REST</h3>
-                                            <p class="text-left pl-5 text-justify">L'API est réalisée en <strong>Java
-                                                    11</strong>
-                                                avec
-                                                le Framework <strong>Spring</strong>. J'utilise principalement
-                                                <strong>SpringBoot</strong> et <strong>SpringSecurity</strong> pour
-                                                sécuriser les requêtes
-                                                vers
-                                                l'API avec des <strong>JWT</strong>.
-                                            </p>
-                                            <a rel="noopener" href="https://github.com/ag7-alexis/public-ag7-geoApi"
-                                                target="_blank">
-                                                <i class="fa fa-github mr-5"></i>Github du Back-End</a>
+                                        <p class="text-left pl-5 text-justify">L'API est réalisée en <strong>Java
+                                                11</strong>
+                                            avec
+                                            le Framework <strong>Spring</strong>. J'utilise principalement
+                                            <strong>SpringBoot</strong> et <strong>SpringSecurity</strong> pour
+                                            sécuriser les requêtes
+                                            vers
+                                            l'API avec des <strong>JWT</strong>.
+                                        </p>
+                                        <a rel="noopener" href="https://github.com/ag7-alexis/public-ag7-geoApi"
+                                            target="_blank">
+                                            <i class="fa fa-github mr-5"></i>Github du Back-End</a>
                                     </div>
                                     <div class="col-sm-4">
                                         <h3 class="text-center content-title">Base de données</h3>
-                                            <p class="text-left pl-5  text-justify">J'utilise une base de données
-                                                <strong>PostgreSQL</strong>, la persistance des données est assuré à
-                                                l'aide de
-                                                <strong>JPA</strong> et <strong>Hibernate</strong>.
-                                            </p>
+                                        <p class="text-left pl-5  text-justify">J'utilise une base de données
+                                            <strong>PostgreSQL</strong>, la persistance des données est assuré à
+                                            l'aide de
+                                            <strong>JPA</strong> et <strong>Hibernate</strong>.
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -518,10 +509,152 @@
             </div>
         </div>
     </div>
+    <!-- modal ag7-chat -->
+    <div class="modal ie-scroll-fix" id="modal-ag7-chat" tabindex="-1" data-overlay-dismissal-disabled="true"
+        role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <button onclick="closeModal()" class="close" data-dismiss="modal" type="button" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h5 class="modal-title text-center">AG7-Chat</h5>
+                <div class="alert alert-secondary filled-lm" role="alert">
+                    <h4 class="alert-heading">Long chargement potentiel</h4>
+                    <p>Premier temps de chargement de <b>maximum 30 secondes</b> !</p>
+                    <p>Les applications sont hébergées sur des instances Heroku qui se mettent en veille au bout de 30
+                        minutes d'inactivité.</p>
+                </div>
+                <p class="text-muted text-left mb-0">Me contacter par
+                    <a href="mailto:guay.alexis7@gmail.com">mail</a> ou via
+                    <a rel="noopener" href="https://www.linkedin.com/in/guayalexis/" target="_blank">Linkedin</a> en cas
+                    de
+                    question ou de problème rencontrée.
+                </p>
+                <div class="text-right mt-20">
+                    <button onclick="closeModal()" class="btn mr-5" data-dismiss="modal" type="button">Fermer</button>
+                    <a onclick="closeModal()" target="_blank" rel="noopener" href="https://ag7-chat.herokuapp.com/login"
+                        class="btn text-white btn-success" data-dismiss="modal" type="button">
+                        Accéder à l'application</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal ag7-project -->
+    <div class="modal ie-scroll-fix" id="modal-ag7-project" tabindex="-1" data-overlay-dismissal-disabled="true"
+        role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <button onclick="closeModal()" class="close" data-dismiss="modal" type="button" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h5 class="modal-title text-center"><i class="fa fa-tachometer mr-5"></i>AG7-Project</h5>
+                <div class="alert alert-secondary filled-lm" role="alert">
+                    <h4 class="alert-heading">Long chargement potentiel</h4>
+                    <p>Premier temps de chargement de <b>maximum 30 secondes</b> !</p>
+                    <p>Les applications sont hébergées sur des instances Heroku qui se mettent en veille au bout de 30
+                        minutes d'inactivité.</p>
+                </div>
+                <p class="text-muted text-left mb-0">Me contacter par
+                    <a href="mailto:guay.alexis7@gmail.com">mail</a> ou via
+                    <a rel="noopener" href="https://www.linkedin.com/in/guayalexis/" target="_blank">Linkedin</a> en cas
+                    de
+                    question ou de problème rencontrée.
+                </p>
+                <div class="text-right mt-20">
+                    <button onclick="closeModal()" class="btn mr-5" data-dismiss="modal" type="button">Fermer</button>
+                    <a onclick="closeModal()" target="_blank" rel="noopener" href="https://ag7-project.herokuapp.com/"
+                        class="btn text-white btn-success" data-dismiss="modal" type="button">
+                        Accéder à l'application</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal ag7-jobhunt -->
+    <div class="modal ie-scroll-fix" id="modal-ag7-jobhunt" tabindex="-1" data-overlay-dismissal-disabled="true"
+        role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <button onclick="closeModal()" class="close" data-dismiss="modal" type="button" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h5 class="modal-title text-center"><i class="fa fa-bolt mr-5"></i>AG7-JobHunt</h5>
+                <div class="alert alert-secondary filled-lm" role="alert">
+                    <h4 class="alert-heading">Long chargement potentiel</h4>
+                    <p>Premier temps de chargement de <b>maximum 30 secondes</b> !</p>
+                    <p>Les applications sont hébergées sur des instances Heroku qui se mettent en veille au bout de 30
+                        minutes d'inactivité.</p>
+                </div>
+                <p class="text-muted text-left mb-0">Me contacter par
+                    <a href="mailto:guay.alexis7@gmail.com">mail</a> ou via
+                    <a rel="noopener" href="https://www.linkedin.com/in/guayalexis/" target="_blank">Linkedin</a> en cas
+                    de
+                    question ou de problème rencontrée.
+                </p>
+                <div class="text-right mt-20">
+                    <button onclick="closeModal()" class="btn mr-5" data-dismiss="modal" type="button">Fermer</button>
+                    <a onclick="closeModal()" target="_blank" rel="noopener" href="https://ag7-jobhunt.herokuapp.com"
+                        class="btn text-white btn-success" data-dismiss="modal" type="button">
+                        Accéder à l'application</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal ag7-geoapi -->
+    <div class="modal ie-scroll-fix" id="modal-ag7-geoapi" tabindex="-1" data-overlay-dismissal-disabled="true"
+        role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <button onclick="closeModal()" class="close" data-dismiss="modal" type="button" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h5 class="modal-title text-center"><i class="fa fa-map-marker mr-5"></i>AG7-GeoAPI</h5>
+                <div class="alert alert-secondary filled-lm" role="alert">
+                    <h4 class="alert-heading">Long chargement potentiel</h4>
+                    <p>Premier temps de chargement de <b>maximum 30 secondes</b> !</p>
+                    <p>Les applications sont hébergées sur des instances Heroku qui se mettent en veille au bout de 30
+                        minutes d'inactivité.</p>
+                </div>
+                <p class="text-muted text-left mb-0">Me contacter par
+                    <a href="mailto:guay.alexis7@gmail.com">mail</a> ou via
+                    <a rel="noopener" href="https://www.linkedin.com/in/guayalexis/" target="_blank">Linkedin</a> en cas
+                    de
+                    question ou de problème rencontrée.
+                </p>
+                <div class="text-right mt-20">
+                    <button onclick="closeModal()" class="btn mr-5" data-dismiss="modal" type="button">Fermer</button>
+                    <a onclick="closeModal()" target="_blank" rel="noopener" href="https://ag7-geo.herokuapp.com/"
+                        class="btn text-white btn-success" data-dismiss="modal" type="button">
+                        Accéder à l'application</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Halfmoon JS -->
     <script src="js/halfmoon.min.js"></script>
     <script src="js/fullpage.min.js"></script>
-<script>function toggleDark(){ halfmoon.toggleDarkMode();} new fullpage('#fullpage',{ responsiveWidth:769, lazyLoading:false}); function moveTo(id){ fullpage_api.moveTo(id);} console.clear(); </script><script >function closeDropdown(){ document.getElementById('nav-dropdown').classList.remove('show'); document.getElementById('nav-link-dropdown-toggle').classList.remove('active');} </script>
+    <script>
+        function toggleDark() {
+            halfmoon.toggleDarkMode();
+        }
+        var fullpage = new fullpage('#fullpage', { responsiveWidth: 769, disableScrolling: '.modal .ie-scroll-fix .show', lazyLoading: false });
+        function moveTo(id) { fullpage_api.moveTo(id); }
+        console.clear();
+        function closeDropdown() {
+            document.getElementById('nav-dropdown').classList.remove('show');
+            document.getElementById('nav-link-dropdown-toggle').classList.remove('active');
+        }
+        function openModal(id) {
+            halfmoon.toggleModal(id);
+            fullpage.setAllowScrolling(false);
+            fullpage.setKeyboardScrolling(false);
+        }
+
+        function closeModal() {
+            fullpage.setAllowScrolling(true);
+            fullpage.setKeyboardScrolling(true);
+        }
+    </script>
 </body>
 
 </html>
