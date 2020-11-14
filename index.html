@@ -26,23 +26,8 @@
     <meta property="og:locale" content="fr_FR">
     <meta property="og:url" content="https://ag7-alexis.github.io/">
     <meta property="og:type" content="website">
-    <template>
 
-    </template>
-
-    <link href="css/fullpage.min.css" rel="stylesheet" />
-    <link href="css/halfmoon-variables.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="css/style.css">
-    <style>
-        #presentation {
-            background-image: url(img/bg.webp);
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center;
-        }
-    </style>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WPL50YBLKJ"></script>
-    <script>window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'G-WPL50YBLKJ'); </script>
+<link href="css/fullpage.min.css" rel="stylesheet" /><link href="css/halfmoon-variables.min.css" rel="stylesheet" /><link rel="stylesheet" href="css/style.css"><style>#presentation{ background-image:url(img/bg.webp); background-repeat:no-repeat; background-size:cover; background-position:center;} </style><script async src="https://www.googletagmanager.com/gtag/js?id=G-WPL50YBLKJ"></script>    <script>window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'G-WPL50YBLKJ'); </script>
 </head>
 
 <body data-dm-shortcut-enabled="true" data-set-preferred-theme-onload="true">
@@ -630,31 +615,7 @@
         </div>
     </div>
 
-    <!-- Halfmoon JS -->
-    <script src="js/halfmoon.min.js"></script>
-    <script src="js/fullpage.min.js"></script>
-    <script>
-        function toggleDark() {
-            halfmoon.toggleDarkMode();
-        }
-        var fullpage = new fullpage('#fullpage', { responsiveWidth: 769, disableScrolling: '.modal .ie-scroll-fix .show'});
-        function moveTo(id) { fullpage_api.moveTo(id); }
-        console.clear();
-        function closeDropdown() {
-            document.getElementById('nav-dropdown').classList.remove('show');
-            document.getElementById('nav-link-dropdown-toggle').classList.remove('active');
-        }
-        function openModal(id) {
-            halfmoon.toggleModal(id);
-            fullpage.setAllowScrolling(false);
-            fullpage.setKeyboardScrolling(false);
-        }
-
-        function closeModal() {
-            fullpage.setAllowScrolling(true);
-            fullpage.setKeyboardScrolling(true);
-        }
-    </script>
+ <script src="js/halfmoon.min.js"></script><script src="js/fullpage.min.js"></script><script>function toggleDark(){ halfmoon.toggleDarkMode();} var fullpage=new fullpage('#fullpage',{ responsiveWidth:769, disableScrolling:'.modal .ie-scroll-fix .show'}); function moveTo(id){ fullpage_api.moveTo(id);} console.clear(); function closeDropdown(){ document.getElementById('nav-dropdown').classList.remove('show'); document.getElementById('nav-link-dropdown-toggle').classList.remove('active');} function openModal(id){ halfmoon.toggleModal(id); fullpage.setAllowScrolling(false); fullpage.setKeyboardScrolling(false);} function closeModal(){ fullpage.setAllowScrolling(true); fullpage.setKeyboardScrolling(true);} </script>
 </body>
 
 </html>
