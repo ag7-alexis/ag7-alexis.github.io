@@ -30,23 +30,10 @@
     <link href="css/fullpage.min.css" rel="stylesheet" />
     <link href="css/halfmoon-variables.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css">
-    <style>
-        #presentation {
-            background-image: url(img/bg.webp);
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center;
-        }
-    </style>
+ <style>#presentation{ background-image:url(img/bg.webp); background-repeat:no-repeat; background-size:cover; background-position:center;} </style>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-WPL50YBLKJ"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'G-WPL50YBLKJ');
-    </script>
+ <script>window.dataLayer=window.dataLayer || []; function gtag(){ dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-WPL50YBLKJ'); </script>
 </head>
 
 <body data-dm-shortcut-enabled="true" data-set-preferred-theme-onload="true">
@@ -198,6 +185,78 @@
                 </div>
             </div>
             <div id="project" class="section pt-10 bg-light-lm fp-auto-height-responsive">
+                <!-- AG7-Chat -->
+                <div class="slide">
+                    <div class="mx-auto mw-full">
+                        <div class="card shadow p-0">
+                            <div class="px-card py-10 border-bottom bg-primary rounded-top">
+                                <h2 class="card-title text-white-lm m-0">
+                                    AG7-Chat
+                                </h2>
+                            </div>
+                            <div class="content my-5">
+                                <div class="row align-items-center">
+                                    <div class="col-md-6">
+                                        <video playsinline data-autoplay loop muted
+                                            class="shadow giphy-embed img-fluid rounded">
+                                            <source type="video/webm" src="img/ag7-chat-gif.webm">
+                                        </video>
+                                    </div>
+                                    <div class="col-md-6 p-10">
+                                        <p class="text-left text-justify">
+                                            Application web inspiré fortement de Messenger permettant d'envoyer des
+                                            messages
+                                            à d'autres utilisateurs. Les utilisateurs peuvent aussi ajouter des contacts
+                                            et modifier leur photo de profil.
+                                        </p>
+                                        <p class="text-left text-justify">
+                                            L'objectif de cette application pour la partie Back-End été de tester la
+                                            <strong>programmation réactive</strong>
+                                            (mis en place seulement sur l'envoi de message pour l'instant)
+                                            ainsi que la configuration d'un <strong>websocket</strong>.
+                                            Et pour la partie Front-End de mettre en place du <strong>Lazy
+                                                Loading</strong>.
+                                        </p>
+                                        <p class="text-muted text-left mb-0">Me contacter par
+                                            <a href="mailto:guay.alexis7@gmail.com">mail</a> ou via
+                                            <a rel="noopener" href="https://www.linkedin.com/in/guayalexis/"
+                                                target="_blank">Linkedin</a> pour avoir le lien.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <div class="row">
+                                    <div class="col-sm-4 border-right-md border-bottom-sm">
+                                        <h3 class="text-center content-title">Front-End</h3>
+                                        <p class="text-left pl-5  text-justify">Le Front-End est fait avec
+                                            <strong>Angular 10</strong> avec la précieuse aide de
+                                            <strong>Halfmoon</strong> et d'<strong>AngularMaterial</strong>.
+                                            J'utilise <strong>Stomp</strong> et <strong>SocketJS</strong> pour le
+                                            websocket.</p>
+                                    </div>
+                                    <div class="col-sm-4 border-right-md border-bottom-sm">
+                                        <h3 class="text-center content-title">Back-End</h5>
+                                            <p class="text-left pl-5  text-justify">La partie Back-End est réalisée en
+                                                <strong>Java 11</strong> avec le Framework <strong>Spring</strong>.
+                                                J'utilise ici
+                                                <strong>SpringBoot</strong>, <strong>Spring Security</strong> ainsi que
+                                                <strong>Spring Webflux</strong>.
+                                            </p>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <h3 class="text-center content-title">Base de données</h5>
+                                            <p class="text-left pl-5  text-justify">J'utilise une base de données
+                                                <strong>NoSQL</strong> ave <strong>MongoDB</strong>
+                                                , la persistance des données est assuré à l'aide de
+                                                <strong>JPA</strong> et <strong>Hibernate</strong>.
+                                            </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <!-- AG7-Project-->
                 <div class="slide">
                     <div class="mx-auto mw-full">
@@ -467,26 +526,7 @@
     <!-- Halfmoon JS -->
     <script src="js/halfmoon.min.js"></script>
     <script src="js/fullpage.min.js"></script>
-    <script type="text/javascript">
-        // Dark mode toggle
-        function toggleDark() {
-            halfmoon.toggleDarkMode();
-        }
-        new fullpage('#fullpage', {
-            responsiveWidth: 769,
-            lazyLoading: false
-        });
-        function moveTo(id) {
-            fullpage_api.moveTo(id);
-        }
-        console.clear();
-    </script>
-    <script type="text/javascript">
-        function closeDropdown() {
-            document.getElementById('nav-dropdown').classList.remove('show');
-            document.getElementById('nav-link-dropdown-toggle').classList.remove('active');
-        }
-    </script>
+ <script type="text/javascript">function toggleDark(){ halfmoon.toggleDarkMode();} new fullpage('#fullpage',{ responsiveWidth:769, lazyLoading:false}); function moveTo(id){ fullpage_api.moveTo(id);} console.clear(); </script><script type="text/javascript">function closeDropdown(){ document.getElementById('nav-dropdown').classList.remove('show'); document.getElementById('nav-link-dropdown-toggle').classList.remove('active');} </script>
 </body>
 
 </html>
