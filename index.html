@@ -518,7 +518,7 @@
                 <div class="text-right mt-20">
                     <button onclick="closeModal()" class="btn mr-5" data-dismiss="modal" type="button">Fermer</button>
                     <a onclick="closeModal()" target="_blank" rel="noopener" href="https://ag7-chat.herokuapp.com/login"
-                        class="btn text-white btn-success" data-dismiss="modal" type="button">
+                        class="btn text-white btn-success" data-dismiss="modal">
                         Accéder à l'application</a>
                 </div>
             </div>
@@ -548,7 +548,7 @@
                 <div class="text-right mt-20">
                     <button onclick="closeModal()" class="btn mr-5" data-dismiss="modal" type="button">Fermer</button>
                     <a onclick="closeModal()" target="_blank" rel="noopener" href="https://ag7-project.herokuapp.com/"
-                        class="btn text-white btn-success" data-dismiss="modal" type="button">
+                        class="btn text-white btn-success" data-dismiss="modal">
                         Accéder à l'application</a>
                 </div>
             </div>
@@ -578,7 +578,7 @@
                 <div class="text-right mt-20">
                     <button onclick="closeModal()" class="btn mr-5" data-dismiss="modal" type="button">Fermer</button>
                     <a onclick="closeModal()" target="_blank" rel="noopener" href="https://ag7-jobhunt.herokuapp.com"
-                        class="btn text-white btn-success" data-dismiss="modal" type="button">
+                        class="btn text-white btn-success" data-dismiss="modal">
                         Accéder à l'application</a>
                 </div>
             </div>
@@ -608,7 +608,7 @@
                 <div class="text-right mt-20">
                     <button onclick="closeModal()" class="btn mr-5" data-dismiss="modal" type="button">Fermer</button>
                     <a onclick="closeModal()" target="_blank" rel="noopener" href="https://ag7-geo.herokuapp.com/"
-                        class="btn text-white btn-success" data-dismiss="modal" type="button">
+                        class="btn text-white btn-success" data-dismiss="modal">
                         Accéder à l'application</a>
                 </div>
             </div>
@@ -616,6 +616,11 @@
     </div>
 
  <script src="js/halfmoon.min.js"></script><script src="js/fullpage.min.js"></script><script>function toggleDark(){ halfmoon.toggleDarkMode();} var fullpage=new fullpage('#fullpage',{ responsiveWidth:769, disableScrolling:'.modal .ie-scroll-fix .show'}); function moveTo(id){ fullpage_api.moveTo(id);} console.clear(); function closeDropdown(){ document.getElementById('nav-dropdown').classList.remove('show'); document.getElementById('nav-link-dropdown-toggle').classList.remove('active');} function openModal(id){ halfmoon.toggleModal(id); fullpage.setAllowScrolling(false); fullpage.setKeyboardScrolling(false);} function closeModal(){ fullpage.setAllowScrolling(true); fullpage.setKeyboardScrolling(true);} </script>
+<script>
+    function play(ele) {
+        console.log('test');
+    }
+</script>
 </body>
 
 </html>
