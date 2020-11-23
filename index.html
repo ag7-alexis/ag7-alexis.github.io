@@ -30,17 +30,7 @@
     <link href="css/fullpage.min.css" rel="stylesheet" />
     <link href="css/halfmoon-variables.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css">
-    <style>
-        #presentation {
-            background-image: url(img/bg.webp);
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center;
-        }
-    </style>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WPL50YBLKJ"></script>
-    <script>window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'G-WPL50YBLKJ'); </script>
-</head>
+    <style>#presentation{ background-image:url(img/bg.webp); background-repeat:no-repeat; background-size:cover; background-position:center;} </style><script async src="https://www.googletagmanager.com/gtag/js?id=G-WPL50YBLKJ"></script><script>window.dataLayer=window.dataLayer || []; function gtag(){ dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-WPL50YBLKJ'); </script></head>
 
 <body data-dm-shortcut-enabled="true" data-set-preferred-theme-onload="true">
     <h1 class="d-none">
@@ -205,8 +195,7 @@
                                             class="shadow giphy-embed img-fluid rounded pointer">
                                             <source type="video/webm" src="img/ag7-chat-gif.webm">
                                             <source type="video/mp4" src="img/ag7-chat-gif.mp4">
-                                            <img src="img/ag7-chat-gif.gif"
-                                                alt="gif video présentation de l'application">
+                                            Désolé, votre navigateur n'accepte pas les videos ...
                                         </video>
                                     </div>
                                     <div class="col-md-6 p-10">
@@ -277,7 +266,9 @@
                                     <div class="col-md-6">
                                         <video playsinline loop muted onclick="playGIF(this)"
                                             class="shadow giphy-embed img-fluid rounded pointer">
-                                            <source type="video/webm" src="img/gif-ag7-project.webm">
+                                            <source type="video/webm" src="img/ag7-project-gif.webm">
+                                            <source type="video/mp4" src="img/ag7-project-gif.mp4">
+                                            Désolé, votre navigateur n'accepte pas les videos ...
                                         </video>
                                     </div>
                                     <div class="col-md-6 p-10">
@@ -355,7 +346,9 @@
                                     <div class="col-md-6">
                                         <video playsinline loop muted onclick="playGIF(this)"
                                             class="shadow giphy-embed img-fluid rounded pointer">
-                                            <source src="img/gif-ag7-jobhunt.webm" type="video/webm">
+                                            <source type="video/webm" src="img/ag7-job-gif.webm">
+                                            <source type="video/mp4" src="img/ag7-job-gif.mp4">
+                                            Désolé, votre navigateur n'accepte pas les videos ...
                                         </video>
                                     </div>
                                     <div class="col-md-6 p-10">
@@ -428,7 +421,9 @@
                                     <div class="col-md-6">
                                         <video playsinline loop muted onclick="playGIF(this)"
                                             class="shadow giphy-embed img-fluid rounded pointer">
-                                            <source src="img/gif-ag7-geoapi.webm" type="video/webm">
+                                            <source type="video/webm" src="img/ag7-geo-gif.webm">
+                                            <source type="video/mp4" src="img/ag7-geo-gif.mp4">
+                                            Désolé, votre navigateur n'accepte pas les videos ...
                                         </video>
                                     </div>
                                     <div class="col-md-6 p-10">
@@ -519,98 +514,10 @@
             </div>
         </div>
     </div>
-    <div class="modal ie-scroll-fix" id="modal-ag7-chat" tabindex="-1" data-overlay-dismissal-disabled="true"
-        role="dialog">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content"><button onclick="closeModal()" class="close" data-dismiss="modal" type="button"
-                    aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h5 class="modal-title text-center">AG7-Chat</h5>
-                <div class="alert alert-secondary filled-lm" role="alert">
-                    <h4 class="alert-heading">Long chargement potentiel</h4>
-                    <p>Premier temps de chargement de <b>maximum 30 secondes</b>!</p>
-                    <p>Les applications sont hébergées sur des instances Heroku qui se mettent en veille au bout de 30
-                        minutes d'inactivité.</p>
-                </div>
-                <p class="text-muted text-left mb-0">Me contacter par <a href="mailto:guay.alexis7@gmail.com">mail</a>ou
-                    via <a rel="noopener" href="https://www.linkedin.com/in/guayalexis/" target="_blank">Linkedin</a>en
-                    cas de question ou de problème rencontré. </p>
-                <div class="text-right mt-20"><button onclick="closeModal()" class="btn mr-5" data-dismiss="modal"
-                        type="button">Fermer</button><a onclick="closeModal()" target="_blank" rel="noopener"
-                        href="https://ag7-chat.herokuapp.com/login" class="btn text-white btn-success"
-                        data-dismiss="modal">Accéder à l'application</a></div>
-            </div>
-        </div>
-    </div>
-    <div class="modal ie-scroll-fix" id="modal-ag7-project" tabindex="-1" data-overlay-dismissal-disabled="true"
-        role="dialog">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content"><button onclick="closeModal()" class="close" data-dismiss="modal" type="button"
-                    aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h5 class="modal-title text-center"><i class="fa fa-tachometer mr-5"></i>AG7-Project</h5>
-                <div class="alert alert-secondary filled-lm" role="alert">
-                    <h4 class="alert-heading">Long chargement potentiel</h4>
-                    <p>Premier temps de chargement de <b>maximum 30 secondes</b>!</p>
-                    <p>Les applications sont hébergées sur des instances Heroku qui se mettent en veille au bout de 30
-                        minutes d'inactivité.</p>
-                </div>
-                <p class="text-muted text-left mb-0">Me contacter par <a href="mailto:guay.alexis7@gmail.com">mail</a>ou
-                    via <a rel="noopener" href="https://www.linkedin.com/in/guayalexis/" target="_blank">Linkedin</a>en
-                    cas de question ou de problème rencontré. </p>
-                <div class="text-right mt-20"><button onclick="closeModal()" class="btn mr-5" data-dismiss="modal"
-                        type="button">Fermer</button><a onclick="closeModal()" target="_blank" rel="noopener"
-                        href="https://ag7-project.herokuapp.com/" class="btn text-white btn-success"
-                        data-dismiss="modal">Accéder à l'application</a></div>
-            </div>
-        </div>
-    </div>
-    <div class="modal ie-scroll-fix" id="modal-ag7-jobhunt" tabindex="-1" data-overlay-dismissal-disabled="true"
-        role="dialog">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content"><button onclick="closeModal()" class="close" data-dismiss="modal" type="button"
-                    aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h5 class="modal-title text-center"><i class="fa fa-bolt mr-5"></i>AG7-JobHunt</h5>
-                <div class="alert alert-secondary filled-lm" role="alert">
-                    <h4 class="alert-heading">Long chargement potentiel</h4>
-                    <p>Premier temps de chargement de <b>maximum 30 secondes</b>!</p>
-                    <p>Les applications sont hébergées sur des instances Heroku qui se mettent en veille au bout de 30
-                        minutes d'inactivité.</p>
-                </div>
-                <p class="text-muted text-left mb-0">Me contacter par <a href="mailto:guay.alexis7@gmail.com">mail</a>ou
-                    via <a rel="noopener" href="https://www.linkedin.com/in/guayalexis/" target="_blank">Linkedin</a>en
-                    cas de question ou de problème rencontré. </p>
-                <div class="text-right mt-20"><button onclick="closeModal()" class="btn mr-5" data-dismiss="modal"
-                        type="button">Fermer</button><a onclick="closeModal()" target="_blank" rel="noopener"
-                        href="https://ag7-jobhunt.herokuapp.com" class="btn text-white btn-success"
-                        data-dismiss="modal">Accéder à l'application</a></div>
-            </div>
-        </div>
-    </div>
-    <div class="modal ie-scroll-fix" id="modal-ag7-geoapi" tabindex="-1" data-overlay-dismissal-disabled="true"
-        role="dialog">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content"><button onclick="closeModal()" class="close" data-dismiss="modal" type="button"
-                    aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h5 class="modal-title text-center"><i class="fa fa-map-marker mr-5"></i>AG7-GeoAPI</h5>
-                <div class="alert alert-secondary filled-lm" role="alert">
-                    <h4 class="alert-heading">Long chargement potentiel</h4>
-                    <p>Premier temps de chargement de <b>maximum 30 secondes</b>!</p>
-                    <p>Les applications sont hébergées sur des instances Heroku qui se mettent en veille au bout de 30
-                        minutes d'inactivité.</p>
-                </div>
-                <p class="text-muted text-left mb-0">Me contacter par <a href="mailto:guay.alexis7@gmail.com">mail</a>ou
-                    via <a rel="noopener" href="https://www.linkedin.com/in/guayalexis/" target="_blank">Linkedin</a>en
-                    cas de question ou de problème rencontré. </p>
-                <div class="text-right mt-20"><button onclick="closeModal()" class="btn mr-5" data-dismiss="modal"
-                        type="button">Fermer</button><a onclick="closeModal()" target="_blank" rel="noopener"
-                        href="https://ag7-geo.herokuapp.com/" class="btn text-white btn-success"
-                        data-dismiss="modal">Accéder à l'application</a></div>
-            </div>
-        </div>
-    </div>
-    <script>function playGIF(e) { if (e.paused) { e.play(); } else { e.pause(); } }</script>
-    <script src="js/halfmoon.min.js"></script>
-    <script src="js/fullpage.min.js"></script>
-    <script>function toggleDark() { halfmoon.toggleDarkMode(); } var fullpage = new fullpage('#fullpage', { responsiveWidth: 769, disableScrolling: '.modal .ie-scroll-fix .show', afterSlideLoad: function (section, origin, destination, direction) { var params = { section: section, origin: origin, destination: destination, direction: direction }; params.destination.item.getElementsByTagName('video')[0].play(); }, afterLoad: function (origin, destination, direction) { var params = { origin: origin, destination: destination, direction: direction }; if (params.destination.item.id == 'project') { params.destination.item.getElementsByTagName('video')[0].play(); } } }); function moveTo(id) { fullpage_api.moveTo(id); } console.clear(); function closeDropdown() { document.getElementById('nav-dropdown').classList.remove('show'); document.getElementById('nav-link-dropdown-toggle').classList.remove('active'); } function openModal(id) { halfmoon.toggleModal(id); fullpage.setAllowScrolling(false); fullpage.setKeyboardScrolling(false); } function closeModal() { fullpage.setAllowScrolling(true); fullpage.setKeyboardScrolling(true); } </script>
+<div class="modal ie-scroll-fix" id="modal-ag7-chat" tabindex="-1" data-overlay-dismissal-disabled="true" role="dialog"><div class="modal-dialog" role="document"><div class="modal-content"><button onclick="closeModal()" class="close" data-dismiss="modal" type="button" aria-label="Close"><span aria-hidden="true">&times;</span></button><h5 class="modal-title text-center">AG7-Chat</h5><div class="alert alert-secondary filled-lm" role="alert"><h4 class="alert-heading">Long chargement potentiel</h4><p>Premier temps de chargement de <b>maximum 30 secondes</b>!</p><p>Les applications sont hébergées sur des instances Heroku qui se mettent en veille au bout de 30 minutes d'inactivité.</p></div><p class="text-muted text-left mb-0">Me contacter par <a href="mailto:guay.alexis7@gmail.com">mail</a>ou via <a rel="noopener" href="https://www.linkedin.com/in/guayalexis/" target="_blank">Linkedin</a>en cas de question ou de problème rencontré. </p><div class="text-right mt-20"><button onclick="closeModal()" class="btn mr-5" data-dismiss="modal" type="button">Fermer</button><a onclick="closeModal()" target="_blank" rel="noopener" href="https://ag7-chat.herokuapp.com/login" class="btn text-white btn-success" data-dismiss="modal">Accéder à l'application</a></div></div></div></div>
+<div class="modal ie-scroll-fix" id="modal-ag7-project" tabindex="-1" data-overlay-dismissal-disabled="true" role="dialog"><div class="modal-dialog" role="document"><div class="modal-content"><button onclick="closeModal()" class="close" data-dismiss="modal" type="button" aria-label="Close"><span aria-hidden="true">&times;</span></button><h5 class="modal-title text-center"><i class="fa fa-tachometer mr-5"></i>AG7-Project</h5><div class="alert alert-secondary filled-lm" role="alert"><h4 class="alert-heading">Long chargement potentiel</h4><p>Premier temps de chargement de <b>maximum 30 secondes</b>!</p><p>Les applications sont hébergées sur des instances Heroku qui se mettent en veille au bout de 30 minutes d'inactivité.</p></div><p class="text-muted text-left mb-0">Me contacter par <a href="mailto:guay.alexis7@gmail.com">mail</a>ou via <a rel="noopener" href="https://www.linkedin.com/in/guayalexis/" target="_blank">Linkedin</a>en cas de question ou de problème rencontré. </p><div class="text-right mt-20"><button onclick="closeModal()" class="btn mr-5" data-dismiss="modal" type="button">Fermer</button><a onclick="closeModal()" target="_blank" rel="noopener" href="https://ag7-project.herokuapp.com/" class="btn text-white btn-success" data-dismiss="modal">Accéder à l'application</a></div></div></div></div>
+<div class="modal ie-scroll-fix" id="modal-ag7-jobhunt" tabindex="-1" data-overlay-dismissal-disabled="true" role="dialog"><div class="modal-dialog" role="document"><div class="modal-content"><button onclick="closeModal()" class="close" data-dismiss="modal" type="button" aria-label="Close"><span aria-hidden="true">&times;</span></button><h5 class="modal-title text-center"><i class="fa fa-bolt mr-5"></i>AG7-JobHunt</h5><div class="alert alert-secondary filled-lm" role="alert"><h4 class="alert-heading">Long chargement potentiel</h4><p>Premier temps de chargement de <b>maximum 30 secondes</b>!</p><p>Les applications sont hébergées sur des instances Heroku qui se mettent en veille au bout de 30 minutes d'inactivité.</p></div><p class="text-muted text-left mb-0">Me contacter par <a href="mailto:guay.alexis7@gmail.com">mail</a>ou via <a rel="noopener" href="https://www.linkedin.com/in/guayalexis/" target="_blank">Linkedin</a>en cas de question ou de problème rencontré. </p><div class="text-right mt-20"><button onclick="closeModal()" class="btn mr-5" data-dismiss="modal" type="button">Fermer</button><a onclick="closeModal()" target="_blank" rel="noopener" href="https://ag7-jobhunt.herokuapp.com" class="btn text-white btn-success" data-dismiss="modal">Accéder à l'application</a></div></div></div></div>
+<div class="modal ie-scroll-fix" id="modal-ag7-geoapi" tabindex="-1" data-overlay-dismissal-disabled="true" role="dialog"><div class="modal-dialog" role="document"><div class="modal-content"><button onclick="closeModal()" class="close" data-dismiss="modal" type="button" aria-label="Close"><span aria-hidden="true">&times;</span></button><h5 class="modal-title text-center"><i class="fa fa-map-marker mr-5"></i>AG7-GeoAPI</h5><div class="alert alert-secondary filled-lm" role="alert"><h4 class="alert-heading">Long chargement potentiel</h4><p>Premier temps de chargement de <b>maximum 30 secondes</b>!</p><p>Les applications sont hébergées sur des instances Heroku qui se mettent en veille au bout de 30 minutes d'inactivité.</p></div><p class="text-muted text-left mb-0">Me contacter par <a href="mailto:guay.alexis7@gmail.com">mail</a>ou via <a rel="noopener" href="https://www.linkedin.com/in/guayalexis/" target="_blank">Linkedin</a>en cas de question ou de problème rencontré. </p><div class="text-right mt-20"><button onclick="closeModal()" class="btn mr-5" data-dismiss="modal" type="button">Fermer</button><a onclick="closeModal()" target="_blank" rel="noopener" href="https://ag7-geo.herokuapp.com/" class="btn text-white btn-success" data-dismiss="modal">Accéder à l'application</a></div></div></div></div>
+<script>function playGIF(e){ if (e.paused){ e.play();} else{ e.pause();}}</script><script src="js/halfmoon.min.js"></script><script src="js/fullpage.min.js"></script><script>function toggleDark(){ halfmoon.toggleDarkMode();} var fullpage=new fullpage('#fullpage',{ responsiveWidth:769, disableScrolling:'.modal .ie-scroll-fix .show', afterSlideLoad:function (section, origin, destination, direction){ var params={ section:section, origin:origin, destination:destination, direction:direction}; params.destination.item.getElementsByTagName('video')[0].play();}, afterLoad:function (origin, destination, direction){ var params={ origin:origin, destination:destination, direction:direction}; if (params.destination.item.id=='project'){ params.destination.item.getElementsByTagName('video')[0].play();}}}); function moveTo(id){ fullpage_api.moveTo(id);} console.clear(); function closeDropdown(){ document.getElementById('nav-dropdown').classList.remove('show'); document.getElementById('nav-link-dropdown-toggle').classList.remove('active');} function openModal(id){ halfmoon.toggleModal(id); fullpage.setAllowScrolling(false); fullpage.setKeyboardScrolling(false);} function closeModal(){ fullpage.setAllowScrolling(true); fullpage.setKeyboardScrolling(true);} </script>
 </body>
-
 </html>
