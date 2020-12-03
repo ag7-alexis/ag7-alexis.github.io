@@ -17,8 +17,7 @@
                 onchange="updateVolet(this)" />
         </div>
     </div>
-    <script>var volets=[]; function updateVolet(v){ for (let s=0; s < volets.length; s++){ volets[s].remove();} for (let i=1; i < v.value; i++){ let sp=document.createElement('span'); sp.classList.add('volet', v.value==10 && 'closed'); volets.push(sp); document.getElementById('store').appendChild(sp);}} </script>
+    <script>onload=()=>{updateVolet(document.getElementById('bouton'))}; var volets=[]; function updateVolet(v){ for (let s=0; s < volets.length; s++){ volets[s].remove()} for (let i=1; i < v.value; i++){ let sp=document.createElement('span'); sp.classList.add('volet', v.value==10 && 'closed'); volets.push(sp); document.getElementById('store').appendChild(sp)}} </script>
 </body>
-
 
 </html>
