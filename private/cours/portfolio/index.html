@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav class="navbar fixed-navbar">
+        <div class="bar">
+            <span class="bar-item logo">
+                Logo
+            </span>
+            <div id="toggle-menu" class="toggle-menu bar-item" onclick="toggle()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+        <div id="toggle-target" class="close-menu menu">
+            <a href="#">accueil</a>
+            <a href="#">tomate</a>
+            <a href="#">cerise</a>
+        </div>
+    </nav>
+    <div class="row p-nav-fixed">
+        <div class="col-sm-4 bg-primary h-400"></div>
+        <div class="col-sm-4 bg-secondary h-400"></div>
+        <div class="col-sm-4 h-400"></div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4 bg-primary h-400"></div>
+        <div class="col-md-4 h-400"></div>
+        <div class="col-md-4 bg-secondary h-400"></div>
+    </div>
+
+    <div class="social-media">
+        <a href="#"><i class="fa fa-facebook"></i><span>Facebook</span></a>
+        <a href="#"><i class="fa fa-twitter"></i><span>Twitter</span></a>
+        <a href="#"><i class="fa fa-instagram"></i><span>Instagram</span></a>
+        <a href="#"><i class="fa fa-pinterest"></i><span>Pinterest</span></a>
+        <a href="#"><i class="fa fa-youtube"></i><span>Youtube</span></a>
+        <a href="#"><i class="fa fa-linkedin"></i><span>Linkedin</span></a>
+    </div>
+</body>
+<script>
+    function toggle() {
+        if (document.getElementById('toggle-target').classList.contains('close-menu')) {
+            document.getElementById('toggle-target').classList.remove('close-menu');
+            document.getElementById('toggle-menu').classList.add('clicked');
+        } else {
+            document.getElementById('toggle-target').classList.add('close-menu');
+            document.getElementById('toggle-menu').classList.remove('clicked');
+        }
+    }
+</script>
+
+</html>
