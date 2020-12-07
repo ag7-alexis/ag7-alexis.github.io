@@ -585,6 +585,11 @@ template {
       justify-content: space-between;
 }
 
+.vertical-center {
+  -ms-flex-align: center;
+      align-items: center;
+}
+
 .h-30 {
   height: 30px;
 }
@@ -621,28 +626,36 @@ template {
   height: 25%;
 }
 
+.h-full-page {
+  height: 100vh;
+}
+
 .w-30 {
-  max-width: 30px;
+  width: 30px;
 }
 
 .w-50 {
-  max-width: 50px;
+  width: 50px;
 }
 
 .w-80 {
-  max-width: 80px;
+  width: 80px;
+}
+
+.w-150 {
+  width: 150px;
 }
 
 .w-400 {
-  max-width: 400px;
+  width: 400px;
 }
 
 .w-500 {
-  max-width: 500px;
+  width: 500px;
 }
 
 .w-600 {
-  max-width: 600px;
+  width: 600px;
 }
 
 .w-tablette {
@@ -673,12 +686,94 @@ template {
   margin: 10px;
 }
 
+.mr-10 {
+  margin-right: 10px;
+}
+
+.ml-10 {
+  margin-left: 10px;
+}
+
+.mt-10 {
+  margin-top: 10px;
+}
+
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+.mx-10 {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.my-10 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
 .m-20 {
   margin: 20px;
 }
 
+.mr-20 {
+  margin-right: 20px;
+}
+
+.ml-20 {
+  margin-left: 20px;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.mx-20 {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.my-20 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
 .m-5 {
   margin: 5px;
+}
+
+.mr-5 {
+  margin-right: 5px;
+}
+
+.ml-5 {
+  margin-left: 5px;
+}
+
+.mt-5 {
+  margin-top: 5px;
+}
+
+.mb-5 {
+  margin-bottom: 5px;
+}
+
+.mx-5 {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.my-5 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.m-0 {
+  margin: 0;
 }
 
 .mx-auto {
@@ -690,12 +785,94 @@ template {
   padding: 10px;
 }
 
+.pr-10 {
+  padding-right: 10px;
+}
+
+.pl-10 {
+  padding-left: 10px;
+}
+
+.pt-10 {
+  padding-top: 10px;
+}
+
+.pb-10 {
+  padding-bottom: 10px;
+}
+
+.px-10 {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.py-10 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
 .p-20 {
   padding: 20px;
 }
 
+.pr-20 {
+  padding-right: 20px;
+}
+
+.pl-20 {
+  padding-left: 20px;
+}
+
+.pt-20 {
+  padding-top: 20px;
+}
+
+.pb-20 {
+  padding-bottom: 20px;
+}
+
+.px-20 {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.py-20 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
 .p-5 {
   padding: 5px;
+}
+
+.pr-5 {
+  padding-right: 5px;
+}
+
+.pl-5 {
+  padding-left: 5px;
+}
+
+.pt-5 {
+  padding-top: 5px;
+}
+
+.pb-5 {
+  padding-bottom: 5px;
+}
+
+.px-5 {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.py-5 {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.p-0 {
+  padding: 0;
 }
 
 .p-nav-fixed {
@@ -705,7 +882,7 @@ template {
 .navbar {
   display: -ms-flexbox;
   display: flex;
-  background-color: #ffffff;
+  background-color: #466099;
   -ms-flex-pack: end;
       justify-content: flex-end;
   -ms-flex-direction: column;
@@ -740,15 +917,15 @@ template {
 }
 
 .menu > a {
-  background-color: #b4d143;
-  color: #000000;
+  background-color: #698fa9;
+  color: #ffffff;
   padding: 10px;
   text-align: center;
   text-decoration: none;
 }
 
 .menu > a:hover {
-  background-color: #c4db6c;
+  background-color: #89a7bc;
 }
 
 .bar-item {
@@ -765,7 +942,7 @@ template {
   display: block;
   width: 100%;
   height: 5px;
-  background-color: #b4d143;
+  background-color: #ffffff;
   margin-bottom: 5px;
 }
 
@@ -814,6 +991,7 @@ template {
 }
 
 .btn {
+  text-decoration: none;
   border: none;
   cursor: pointer;
   padding: 5px 10px;
@@ -824,59 +1002,63 @@ template {
 
 .btn:hover {
   background-color: #b0b0b0;
+  text-decoration: none;
+  color: #ffffff;
 }
 
 .btn-primary {
-  background-color: #fbb730;
+  background-color: #466099;
 }
 
 .btn-secondary {
-  background-color: #b4d143;
+  background-color: #698fa9;
 }
 
 .btn-primary:hover {
-  background-color: #fcc862;
+  background-color: #5d79b5;
 }
 
 .btn-secondary:hover {
-  background-color: #c4db6c;
+  background-color: #89a7bc;
 }
 
 .social-media {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  position: absolute;
-  left: 0;
-  top: 30vh;
+  display: none;
 }
 
-.social-media a {
-  background-color: #2682c2;
-  color: #ffffff;
-  height: 45px;
-  min-width: 45px;
-  font-size: 1.6em;
-  text-align: center;
-  position: relative;
-}
-
-.social-media a span {
-  visibility: hidden;
-  padding-left: 10px;
-  position: absolute;
-  padding-right: 10px;
-}
-
-.social-media a:hover > span {
-  visibility: visible;
-  background-color: #10435f;
-  height: 45px;
-}
-
-.social-media a:hover {
-  background-color: #10435f;
+@media (min-width: 992px) {
+  .social-media {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    position: absolute;
+    left: 0;
+    top: 40vh;
+  }
+  .social-media a {
+    background-color: #2682c2;
+    color: #ffffff;
+    height: 45px;
+    min-width: 45px;
+    font-size: 1.6em;
+    text-align: center;
+    position: relative;
+  }
+  .social-media a span {
+    visibility: hidden;
+    padding-left: 10px;
+    position: absolute;
+    padding-right: 10px;
+  }
+  .social-media a:hover > span {
+    visibility: visible;
+    background-color: #10435f;
+    height: 45px;
+  }
+  .social-media a:hover {
+    background-color: #10435f;
+  }
 }
 
 @font-face {
@@ -3834,23 +4016,31 @@ h6 {
 }
 
 .bg-primary {
-  background-color: #fbb730;
+  background-color: #466099;
 }
 
 .bg-secondary {
-  background-color: #b4d143;
+  background-color: #698fa9;
+}
+
+.bg-white {
+  background-color: #ffffff;
 }
 
 .text-white {
   color: #ffffff;
 }
 
+.text-black {
+  color: #000000;
+}
+
 .text-primary {
-  color: #fbb730;
+  color: #466099;
 }
 
 .text-secondary {
-  color: #b4d143;
+  color: #698fa9;
 }
 
 .upper {
@@ -3863,6 +4053,31 @@ img {
 
 .pointer {
   cursor: pointer;
+}
+
+.box-shadow {
+  box-shadow: 0px 0px 10px 2px;
+}
+
+.rounded-circle {
+  border-radius: 50% !important;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.no-hover:hover {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.landing {
+  background-image: url(../img/bg.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 /*# sourceMappingURL=style.css.map */

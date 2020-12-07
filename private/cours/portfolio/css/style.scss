@@ -1,0 +1,84 @@
+@import "import";
+
+p {
+  color: $text-content;
+}
+
+a {
+  color: $text-title;
+}
+
+@for $h from 1 to 6 +1 {
+  h#{$h} {
+    color: $text-title;
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+
+.bg-primary {
+  background-color: $primary-color;
+}
+
+.bg-secondary {
+  background-color: $secondary-color;
+}
+
+.bg-white {
+  background-color: #ffffff;
+}
+
+.text-white {
+  color: #ffffff;
+}
+
+.text-black {
+  color: #000000;
+}
+
+.text-primary {
+  color: $primary-color;
+}
+
+.text-secondary {
+  color: $secondary-color;
+}
+
+.upper {
+  text-transform: uppercase;
+}
+
+img {
+  max-width: 100%;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.box-shadow {
+  box-shadow: 0px 0px 10px 2px;
+}
+
+.rounded-circle {
+  border-radius: 50% !important;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.no-hover:hover {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.landing {
+  background-image: url(../img/bg.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}

@@ -9,10 +9,10 @@
 </head>
 
 <body>
-    <nav class="navbar fixed-navbar">
+    <nav class="navbar fixed-navbar box-shadow">
         <div class="bar">
-            <span class="bar-item logo">
-                Logo
+            <span class="ml-10 bar-item logo">
+                <a href="#presentation" class="text-white no-hover">GUAY Alexis</a>
             </span>
             <div id="toggle-menu" class="toggle-menu bar-item" onclick="toggle()">
                 <span></span>
@@ -22,30 +22,149 @@
         </div>
 
         <div id="toggle-target" class="close-menu menu">
-            <a href="#">accueil</a>
-            <a href="#">tomate</a>
-            <a href="#">cerise</a>
+            <a href="#presentation" class="mx-5">Présentation</a>
+            <a href="#projets" class="mx-5">Projets</a>
+            <a href="#" class="mx-5">cerise</a>
         </div>
     </nav>
-    <div class="row p-nav-fixed">
-        <div class="col-sm-4 bg-primary h-400"></div>
-        <div class="col-sm-4 bg-secondary h-400"></div>
-        <div class="col-sm-4 h-400"></div>
+    <div class="row p-nav-fixed h-full-page landing vertical-center" id="presentation">
+        <div class="col-sm-10 col-md-6 mx-auto box-shadow">
+            <h1 class="text-white text-center bg-primary m-0">Développeur web junior</h1>
+            <div class="row bg-white">
+                <div class="col-sm-5 col-md-4 row vertical-center">
+                    <img src="img/profil.webp" alt="Photo de profil" class="img-fluid rounded-circle w-150 mx-auto">
+                </div>
+                <div class="col-sm-7 col-md-8">
+                    <p class="text-black p-10 m-0">Je m'appelle Alexis, je suis un <strong>jeune développeur</strong>
+                        de 20 ans. Je
+                        suis
+                        passionné
+                        par le monde du numérique et plus particulièrement le <strong>développement
+                            informatique</strong>.
+                        À la question <q>plutôt <strong>Front-End</strong> ou <strong>Back-End</strong>
+                            ?</q>, j'ai
+                        envie
+                        de répondre <q>les lignes de codes, moi j'aime ça</q>.
+                        Étant <strong>autodidacte</strong> et assez <strong>créatif</strong>,
+                        j'aime donner vie à mes projets et par la même
+                        occasion développer mes compétences.</p>
+                </div>
+            </div>
+
+        </div>
     </div>
 
-    <div class="row">
-        <div class="col-md-4 bg-primary h-400"></div>
-        <div class="col-md-4 h-400"></div>
-        <div class="col-md-4 bg-secondary h-400"></div>
+    <div class="row" id="projets">
+        <div class="col-sm-6 bg-primary p-20 p-nav-fixed">
+            <h2 class="text-white text-center m-0">AG7-Chat</h2>
+            <div class="bg-white p-10 box-shadow">
+                <p class="text-black">
+                    Application web inspiré fortement de Messenger permettant d'envoyer des
+                    messages
+                    à d'autres utilisateurs. Les utilisateurs peuvent aussi ajouter des contacts
+                    et modifier leur photo de profil.
+                </p>
+                <p class="text-black">
+                    L'objectif de cette application pour la partie Back-End été de tester la
+                    <strong>programmation réactive</strong>
+                    (mis en place seulement sur l'envoi de message pour l'instant)
+                    ainsi que la configuration d'un <strong>websocket</strong>.
+                    Et pour la partie Front-End de mettre en place du <strong>Lazy
+                        Loading</strong>.
+                </p>
+                <h3 class="text-black text-center m-0">Front-End</h3>
+                <p class="text-black">Le Front-End est fait avec
+                    <strong>Angular 10</strong> avec la précieuse aide de
+                    <strong><a href="https://www.gethalfmoon.com/" rel="noopener" target="_blank">Halfmoon</a></strong>
+                    et
+                    d'<strong>AngularMaterial</strong>.
+                    J'utilise <strong>Stomp</strong> et <strong>SocketJS</strong> pour le
+                    websocket.</p>
+                <hr>
+                <h3 class="text-black text-center m-0">Back-End</h3>
+                <p class="text-black">La partie Back-End est réalisée en
+                    <strong>Java 11</strong> avec le Framework <strong>Spring</strong>.
+                    J'utilise ici
+                    <strong>SpringBoot</strong>, <strong>Spring Security</strong> ainsi que
+                    <strong>Spring Webflux</strong>.</p>
+                <hr>
+                <h3 class="text-black text-center m-0">Base de données</h3>
+                <p class="text-black">J'utilise une base de données
+                    <strong>NoSQL</strong> ave <strong>MongoDB</strong>
+                    , la persistance des données est assuré à l'aide de
+                    <strong>JPA</strong> et <strong>Hibernate</strong>.</p>
+
+                <div class="text-center">
+                    <a href="https://ag7-chat.herokuapp.com/login" class="btn btn-primary">Découvrir l'application</a>
+                </div>
+
+            </div>
+        </div>
+        <div class="col-sm-6 bg-secondary p-20 p-nav-fixed">
+            <h2 class="text-white text-center m-0"><i class="fa fa-tachometer mr-5"></i>AG7-Project</h2>
+            <div class="bg-white p-10 box-shadow">
+                <p class="text-black">
+                    Application web qui permet de gérer des projets selon la méthode
+                    <strong>Kanban</strong>.
+                    Les utilisateurs peuvent créer des projets, les partager à d'autres
+                    utilisateurs et gérer les tâches a réaliser pour ce projet.
+                </p>
+                <p class="text-black">
+                    L'objectif de cette application été découvrir <strong>Angular</strong> un
+                    peu plus en
+                    profondeur pour ce qu'y est de la partie Front-End.
+                    Et pour la partie Back-End j'ai appris à utiliser <strong>Spring
+                        Security</strong>
+                    pour sécuriser les requêtes avec des <strong>JWT</strong>.
+                </p>
+                <h3 class="text-black text-center m-0">Front-End</h3>
+                <p class="text-black">Le Front-End est fait avec
+                    <strong>Angular
+                        8</strong> avec la précieuse aide de
+                    <strong>Bootstrap</strong> et d'<strong>AngularMaterial</strong>.
+                <p class="text-center">
+                    <a class="text-primary" rel="noopener"
+                        href="https://github.com/ag7-alexis/public-ag7-project-frontend" target="_blank">
+                        <i class="fa fa-github mr-5"></i>Github du Front-End</a>
+                </p>
+
+                </p>
+                <hr>
+                <h3 class="text-black text-center m-0">Back-End</h3>
+                <p class="text-black">La partie Back-End est réalisée en
+                    <strong>Java 11</strong> avec le Framework <strong>Spring</strong>.
+                    J'utilise principalement
+                    <strong>SpringBoot</strong> et <strong>SpringSecurity</strong> pour
+                    sécuriser les requêtes
+                    avec
+                    des <strong>JWT</strong>.
+                <p class="text-center">
+                    <a class="text-primary" rel="noopener"
+                        href="https://github.com/ag7-alexis/public-ag7-project-backend" target="_blank">
+                        <i class="fa fa-github mr-5"></i>Github du Back-End</a>
+                </p>
+
+                <hr>
+                <h3 class="text-black text-center m-0">Base de données</h3>
+                <p class="text-black">J'utilise une base de données
+                    <strong>NoSQL</strong> avec <strong>MongoDB</strong>
+                    , la persistance des données est assuré à l'aide de
+                    <strong>JPA</strong> et <strong>Hibernate</strong>.</p>
+
+                <div class="text-center">
+                    <a href="https://ag7-project.herokuapp.com/" class="btn btn-secondary">Découvrir l'application</a>
+                </div>
+
+            </div>
+        </div>
     </div>
 
     <div class="social-media">
-        <a href="#"><i class="fa fa-facebook"></i><span>Facebook</span></a>
-        <a href="#"><i class="fa fa-twitter"></i><span>Twitter</span></a>
-        <a href="#"><i class="fa fa-instagram"></i><span>Instagram</span></a>
-        <a href="#"><i class="fa fa-pinterest"></i><span>Pinterest</span></a>
-        <a href="#"><i class="fa fa-youtube"></i><span>Youtube</span></a>
-        <a href="#"><i class="fa fa-linkedin"></i><span>Linkedin</span></a>
+        <a href="https://www.linkedin.com/in/guayalexis/" target="_blank"><i
+                class="fa fa-linkedin"></i><span>Linkedin</span></a>
+        <a href="https://github.com/ag7-alexis" target="_blank"><i class="fa fa-github"></i><span>Github</span></a>
+        <a href="CV_GUAY_Alexis.pdf" target="_blank"><i class="fa fa-file"></i><span>CV</span></a>
+        <a href="mailto:guay.alexis7@gmail.com" target="_blank"><i class="fa fa-at"></i><span>Email</span></a>
     </div>
 </body>
 <script>
