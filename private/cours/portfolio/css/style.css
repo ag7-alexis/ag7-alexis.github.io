@@ -907,6 +907,11 @@ template {
       align-items: center;
 }
 
+.logo > a {
+  font-size: 1.4em;
+  font-weight: bold;
+}
+
 .menu {
   display: -ms-flexbox;
   display: flex;
@@ -1062,6 +1067,49 @@ template {
   }
   .social-media a:hover {
     background-color: #10435f;
+  }
+}
+
+.list-onglets > div > h2 {
+  background-color: #ffffff;
+  color: #466099;
+  cursor: pointer;
+  text-align: center;
+  margin-bottom: 0;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+
+.list-onglets .active {
+  background-color: #466099;
+  color: #ffffff;
+}
+
+.content-onglets > div {
+  display: none;
+}
+
+.content-onglets .active-content {
+  display: block !important;
+  -webkit-animation: fade 0.5s forwards;
+          animation: fade 0.5s forwards;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
 
@@ -4064,7 +4112,7 @@ img {
 }
 
 .box-shadow {
-  box-shadow: 0px 0px 10px 2px;
+  box-shadow: 0px 0px 5px 1px;
 }
 
 .rounded-circle {

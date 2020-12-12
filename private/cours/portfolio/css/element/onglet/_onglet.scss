@@ -1,0 +1,33 @@
+.list-onglets {
+  > div > h2 {
+    background-color: #ffffff;
+    color: $primary-color;
+    cursor: pointer;
+    text-align: center;
+    margin-bottom: 0;
+    padding-bottom: 5px;
+    padding-top: 5px;
+  }
+  .active {
+    background-color: $primary-color;
+    color: #ffffff;
+  }
+}
+
+.content-onglets {
+  > div {
+    display: none;
+  }
+  .active-content {
+    display: block !important;
+    animation: fade 0.5s forwards;
+  }
+  @keyframes fade {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+}
