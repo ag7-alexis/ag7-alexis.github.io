@@ -1,4 +1,4 @@
-$paddings: 10, 20, 5;
+$paddings: 10, 20, 5, 40;
 
 @mixin padding($param) {
   padding: unquote($param + "px");
@@ -35,7 +35,7 @@ $paddings: 10, 20, 5;
     @include padding($padding);
   }
 
-  .pr-#{$padding}{
+  .pr-#{$padding} {
     @include padding-right($padding);
   }
 
