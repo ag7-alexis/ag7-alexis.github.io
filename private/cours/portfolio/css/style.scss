@@ -1,11 +1,15 @@
 @import "import";
 
+html {
+  scroll-behavior: smooth;
+}
+
 p {
   color: $text-content;
 }
 
 a {
-  color: $text-title;
+  color: $link-color;
 }
 
 @for $h from 1 to 6 +1 {
@@ -81,4 +85,28 @@ img {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+.limit-sm,
+.limit-md {
+  border-top: solid $text-title;
+  border-bottom: solid $text-title;
+}
+
+@media (min-width: $breakpoint-tablette) {
+  .limit-sm {
+    border-top: none;
+    border-bottom: none;
+    border-right: solid $text-title;
+    border-left: solid $text-title;
+  }
+}
+
+@media (min-width: $breakpoint-desktop) {
+  .limit-md {
+    border-top: none;
+    border-bottom: none;
+    border-right: solid $text-title;
+    border-left: solid $text-title;
+  }
 }

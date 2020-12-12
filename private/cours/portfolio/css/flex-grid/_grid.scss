@@ -20,16 +20,18 @@ $grid-columns: 12;
   .col-md-#{$c} {
     width: 100%;
   }
-
 }
 
 // Tablette
 @media (min-width: $breakpoint-tablette) {
-
   @for $c from 1 to $grid-columns + 1 {
     .col-sm-#{$c} {
       width: 100% / $grid-columns * $c;
     }
+  }
+
+  .reverse-row-sm {
+    flex-direction: row-reverse;
   }
 }
 

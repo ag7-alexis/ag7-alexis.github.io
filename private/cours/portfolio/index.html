@@ -37,9 +37,11 @@
         </div>
 
         <div id="toggle-target" class="close-menu menu">
-            <a href="#presentation" class="mx-5">Présentation</a>
+            <a href="#presentation" data-targett="#presentation" class="mx-5">Présentation</a>
+            <a href="#exp" class="mx-5">Expérience</a>
             <a href="#projets" class="mx-5">Projets</a>
-            <a href="#" class="mx-5">cerise</a>
+            <a href="#dipl" class="mx-5">Diplômes</a>
+            <a href="#contact" class="mx-5">Contact</a>
         </div>
     </nav>
     <!-- FIN Navigation -->
@@ -67,16 +69,39 @@
                         occasion développer mes compétences.</p>
                 </div>
             </div>
-
         </div>
     </div>
     <!-- FIN Presentation -->
+
+    <!-- DEBUT Expérience -->
+    <div class="row reverse-row-sm p-nav-fixed mb-20" id="exp">
+        <h2 class="col-12 text-center mb-10">Expériences Professionnelles</h2>
+        <div class="col-sm-4 text-center">
+            <h3>JANVIER 2020 - FÉVRIER 2020</h3>
+            <h4><i class="fa fa-map-marker mr-5"></i>SQUARE INFO | MONTÉLIMAR</h4>
+            <p>Création d'un plugin Wordpress
+                (PHP, JS, HTML, CSS)</p>
+        </div>
+        <div class="col-sm-4 text-center limit-sm">
+            <h3>MARS 2019 - JUIN 2019</h3>
+            <h4>Auto-entrepreneur</h4>
+            <p>Développeur Web sur Fiverr
+                (JS, HTML, CSS)</p>
+        </div>
+        <div class="col-sm-4 text-center">
+            <h3>MAI 2019 - JUIN 2019</h3>
+            <h4><i class="fa fa-map-marker mr-5"></i>SQUARE INFO | MONTÉLIMAR</h4>
+            <p>Création d'un thème Wordpress
+                (JS, HTML, CSS)</p>
+        </div>
+    </div>
+    <!-- FIN Expérience -->
 
     <!-- DEBUT Projets -->
     <div class="row" id="projets">
         <!-- DEBUT AG7-Chat -->
         <div class="col-sm-6 bg-primary p-20 p-nav-fixed">
-            <h2 class="text-white text-center m-0">AG7-Chat</h2>
+            <h2 class="text-white text-center">AG7-Chat</h2>
             <div class="bg-white p-10 box-shadow">
                 <p class="text-black">
                     Application web inspiré fortement de Messenger permettant d'envoyer des
@@ -92,28 +117,37 @@
                     Et pour la partie Front-End de mettre en place du <strong>Lazy
                         Loading</strong>.
                 </p>
-                <h3 class="text-black text-center m-0">Front-End</h3>
-                <p class="text-black">Le Front-End est fait avec
-                    <strong>Angular 10</strong> avec la précieuse aide de
-                    <strong><a href="https://www.gethalfmoon.com/" rel="noopener" target="_blank">Halfmoon</a></strong>
-                    et
-                    d'<strong>AngularMaterial</strong>.
-                    J'utilise <strong>Stomp</strong> et <strong>SocketJS</strong> pour le
-                    websocket.</p>
-                <hr>
-                <h3 class="text-black text-center m-0">Back-End</h3>
-                <p class="text-black">La partie Back-End est réalisée en
-                    <strong>Java 11</strong> avec le Framework <strong>Spring</strong>.
-                    J'utilise ici
-                    <strong>SpringBoot</strong>, <strong>Spring Security</strong> ainsi que
-                    <strong>Spring Webflux</strong>.</p>
-                <hr>
-                <h3 class="text-black text-center m-0">Base de données</h3>
-                <p class="text-black">J'utilise une base de données
-                    <strong>NoSQL</strong> ave <strong>MongoDB</strong>
-                    , la persistance des données est assuré à l'aide de
-                    <strong>JPA</strong> et <strong>Hibernate</strong>.</p>
-
+                <div class="row mb-20">
+                    <div class="col-md-4 p-5">
+                        <h3 class="text-black text-center m-0">Front-End</h3>
+                        <p class="text-black">Le Front-End est fait avec
+                            <strong>Angular 10</strong> avec la précieuse aide de
+                            <strong><a href="https://www.gethalfmoon.com/" rel="noopener"
+                                    target="_blank">Halfmoon</a></strong>
+                            et
+                            d'<strong>AngularMaterial</strong>.
+                            J'utilise <strong>Stomp</strong> et <strong>SocketJS</strong> pour le
+                            websocket.
+                        </p>
+                    </div>
+                    <div class="col-md-4 limit-md p-5">
+                        <h3 class="text-black text-center m-0">Back-End</h3>
+                        <p class="text-black">La partie Back-End est réalisée en
+                            <strong>Java 11</strong> avec le Framework <strong>Spring</strong>.
+                            J'utilise ici
+                            <strong>SpringBoot</strong>, <strong>Spring Security</strong> ainsi que
+                            <strong>Spring Webflux</strong>.
+                        </p>
+                    </div>
+                    <div class="col-md-4 p-5">
+                        <h3 class="text-black text-center m-0">Base de données</h3>
+                        <p class="text-black">J'utilise une base de données
+                            <strong>NoSQL</strong> ave <strong>MongoDB</strong>
+                            , la persistance des données est assuré à l'aide de
+                            <strong>JPA</strong> et <strong>Hibernate</strong>.
+                        </p>
+                    </div>
+                </div>
                 <div class="text-center">
                     <a href="https://ag7-chat.herokuapp.com/login" class="btn btn-primary">Découvrir l'application</a>
                 </div>
@@ -139,40 +173,46 @@
                         Security</strong>
                     pour sécuriser les requêtes avec des <strong>JWT</strong>.
                 </p>
-                <h3 class="text-black text-center m-0">Front-End</h3>
-                <p class="text-black">Le Front-End est fait avec
-                    <strong>Angular
-                        8</strong> avec la précieuse aide de
-                    <strong>Bootstrap</strong> et d'<strong>AngularMaterial</strong>.
-                <p class="text-center">
-                    <a class="text-primary" rel="noopener"
-                        href="https://github.com/ag7-alexis/public-ag7-project-frontend" target="_blank">
-                        <i class="fa fa-github mr-5"></i>Github du Front-End</a>
-                </p>
+                <div class="row mb-20">
+                    <div class="col-md-4 p-5">
+                        <h3 class="text-black text-center m-0">Front-End</h3>
+                        <p class="text-black">Le Front-End est fait avec
+                            <strong>Angular
+                                8</strong> avec la précieuse aide de
+                            <strong>Bootstrap</strong> et d'<strong>AngularMaterial</strong>.
+                        <p class="text-center">
+                            <a rel="noopener" href="https://github.com/ag7-alexis/public-ag7-project-frontend"
+                                target="_blank">
+                                <i class="fa fa-github mr-5"></i>Github du Front-End</a>
+                        </p>
 
-                </p>
-                <hr>
-                <h3 class="text-black text-center m-0">Back-End</h3>
-                <p class="text-black">La partie Back-End est réalisée en
-                    <strong>Java 11</strong> avec le Framework <strong>Spring</strong>.
-                    J'utilise principalement
-                    <strong>SpringBoot</strong> et <strong>SpringSecurity</strong> pour
-                    sécuriser les requêtes
-                    avec
-                    des <strong>JWT</strong>.
-                <p class="text-center">
-                    <a class="text-primary" rel="noopener"
-                        href="https://github.com/ag7-alexis/public-ag7-project-backend" target="_blank">
-                        <i class="fa fa-github mr-5"></i>Github du Back-End</a>
-                </p>
-
-                <hr>
-                <h3 class="text-black text-center m-0">Base de données</h3>
-                <p class="text-black">J'utilise une base de données
-                    <strong>NoSQL</strong> avec <strong>MongoDB</strong>
-                    , la persistance des données est assuré à l'aide de
-                    <strong>JPA</strong> et <strong>Hibernate</strong>.</p>
-
+                        </p>
+                    </div>
+                    <div class="col-md-4 p-5 limit-md">
+                        <h3 class="text-black text-center m-0">Back-End</h3>
+                        <p class="text-black">La partie Back-End est réalisée en
+                            <strong>Java 11</strong> avec le Framework <strong>Spring</strong>.
+                            J'utilise principalement
+                            <strong>SpringBoot</strong> et <strong>SpringSecurity</strong> pour
+                            sécuriser les requêtes
+                            avec
+                            des <strong>JWT</strong>.
+                        <p class="text-center">
+                            <a rel="noopener" href="https://github.com/ag7-alexis/public-ag7-project-backend"
+                                target="_blank">
+                                <i class="fa fa-github mr-5"></i>Github du Back-End</a>
+                        </p>
+                        </p>
+                    </div>
+                    <div class="col-md-4 p-5">
+                        <h3 class="text-black text-center m-0">Base de données</h3>
+                        <p class="text-black">J'utilise une base de données
+                            <strong>NoSQL</strong> avec <strong>MongoDB</strong>
+                            , la persistance des données est assuré à l'aide de
+                            <strong>JPA</strong> et <strong>Hibernate</strong>.
+                        </p>
+                    </div>
+                </div>
                 <div class="text-center">
                     <a href="https://ag7-project.herokuapp.com/" class="btn btn-secondary">Découvrir l'application</a>
                 </div>
@@ -183,15 +223,53 @@
     </div>
     <!-- FIN Projets -->
 
+    <!-- DEBUT Diplome -->
+    <div class="row reverse-row-sm p-nav-fixed mb-20" id="dipl">
+        <h2 class="col-12 text-center mb-10">Diplômes et Formations</h2>
+        <div class="col-sm-4 text-center">
+            <h3>2020 - 2021</h3>
+            <h4><i class="fa fa-map-marker mr-5"></i>IUT | GAP</h4>
+            <p>Licence Professionnelle MIW (Mobilité, Internet, Web), En cours</p>
+        </div>
+        <div class="col-sm-4 text-center limit-sm">
+            <h3>2018 - 2020</h3>
+            <h4><i class="fa fa-map-marker mr-5"></i>Lycée Algoud Laffemas | VALENCE</h4>
+            <p>BTS SIO option SLAM (Solutions Logicielles et Applications Métier), Obtenu</p>
+        </div>
+        <div class="col-sm-4 text-center">
+            <h3>2018</h3>
+            <h4><i class="fa fa-map-marker mr-5"></i>Lycée Alain Borne | MONTÉLIMAR</h4>
+            <p>BAC STMG option Gestion Finance, Mention Bien</p>
+        </div>
+    </div>
+    <!-- FIN Diplome -->
+
     <!-- DEBUT Contact -->
+
+    <div class="row h-full-page bg-primary vertical-center" id="contact">
+        <div class="col-sm-10 col-md-6 mx-auto box-shadow">
+            <h1 class="text-white text-center bg-primary m-0">Contact</h1>
+            <div class="bg-white text-center">
+                <p>Mail : <a href="mailto:guay.alexis7@gmail.com">guay.alexis7@gmail.com</a></p>
+                <p>LinkedIn <i class="text-primary fa fa-linkedin"></i> : <a rel="noopener"
+                        href="https://www.linkedin.com/in/guayalexis/" target="_blank">Guay Alexis</a></p>
+                <p>GitHub <i class="fa fa-github"></i> : <a rel="noopener" href="https://github.com/ag7-alexis"
+                        target="_blank">ag7-alexis</a></p>
+                <p class="m-0 pb-5">CV (pdf) : <a href="CV_GUAY_Alexis.pdf">Guay Alexis</a></p>
+            </div>
+        </div>
+    </div>
+    <!-- FIN Contact -->
+
+    <!-- DEBUT Contact fixed -->
     <div class="social-media">
-        <a href="https://www.linkedin.com/in/guayalexis/" target="_blank"><i
-                class="fa fa-linkedin"></i><span>Linkedin</span></a>
+        <a href="https://www.linkedin.com/in/guayalexis/" target="_blank">
+            <i class="fa fa-linkedin"></i><span>Linkedin</span></a>
         <a href="https://github.com/ag7-alexis" target="_blank"><i class="fa fa-github"></i><span>Github</span></a>
         <a href="CV_GUAY_Alexis.pdf" target="_blank"><i class="fa fa-file"></i><span>CV</span></a>
         <a href="mailto:guay.alexis7@gmail.com" target="_blank"><i class="fa fa-at"></i><span>Email</span></a>
     </div>
-    <!-- FIN Contact -->
+    <!-- FIN Contact fixed -->
 </body>
 <script>
     function toggle() {
