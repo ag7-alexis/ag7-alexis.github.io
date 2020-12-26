@@ -364,6 +364,10 @@ template {
   --title-font-color: #eeeeee;
   --text-font-color: #ffffff;
   --contrast-light-svg: contrast(0);
+  --linkedin-color-hover: invert(29%) sepia(33%) saturate(3612%)
+    hue-rotate(193deg) brightness(95%) contrast(99%);
+  --github-color-hover: invert(36%) sepia(9%) saturate(2753%) hue-rotate(222deg)
+    brightness(93%) contrast(84%);
 }
 
 @media (prefers-color-scheme: light) {
@@ -371,8 +375,6 @@ template {
     --side-background-color: #f9f9f9;
     --footer-background-color: #f3f3f3;
     --main-background-color: #ffffff;
-    --button-background: #43b581;
-    --button-hover-background: #41a277;
     --title-font-color: #000000;
     --text-font-color: #2b2b2b;
     --contrast-light-svg: contrast(1);
@@ -489,7 +491,7 @@ header > h1::before {
 }
 
 .students {
-  padding-top: 50px;
+  padding-top: 60px;
   background-color: var(--main-background-color);
   grid-area: main-students;
 }
@@ -590,6 +592,10 @@ h2 {
   font-size: 0;
 }
 
+.github:hover::after {
+  filter: var(--github-color-hover);
+}
+
 .linkedin::after {
   content: "";
   background: url(../img/linkedinsvg.svg);
@@ -604,6 +610,10 @@ h2 {
 .linkedin {
   visibility: hidden;
   font-size: 0;
+}
+
+.linkedin:hover::after {
+  filter: var(--linkedin-color-hover);
 }
 
 .teaching {
