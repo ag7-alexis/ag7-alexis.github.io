@@ -360,7 +360,7 @@ template {
   --button-hover-background: #41a277;
   --title-font-color: #eeeeee;
   --text-font-color: #ffffff;
-  --contrast-light-svg: contrast(0.5);
+  --contrast-light-svg: contrast(0);
 }
 
 @font-face {
@@ -590,7 +590,13 @@ h2 {
 
 .footer {
   background-color: var(--footer-background-color);
-  padding: 10px;
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.footer > div {
+  width: 50%;
 }
 
 .footer p,
@@ -614,4 +620,66 @@ h2 {
   filter: var(--contrast-light-svg);
   display: inline-block;
   margin-right: 5px;
+}
+
+.miw_contact li {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 10px 0;
+}
+
+.miw_contact li > .label::before {
+  content: "";
+  background-size: 20px 20px;
+  height: 27px;
+  width: 27px;
+  filter: var(--contrast-light-svg);
+  display: inline-block;
+  visibility: visible;
+  background-repeat: no-repeat;
+}
+
+.miw_contact li:nth-child(1) > .label::before {
+  background-image: url(../img/locationsvg.svg);
+}
+
+.miw_contact li:nth-child(2) > .label::before {
+  background-image: url(../img/phonesvg.svg);
+}
+
+.miw_contact li:nth-child(3) > .label::before {
+  background-image: url(../img/mailsvg.svg);
+}
+
+.miw_contact li:nth-child(4) > .label::before {
+  background-image: url(../img/websvg.svg);
+}
+
+.miw_contact li:nth-child(5) > .label::before {
+  background-image: url(../img/facebooksvg.svg);
+}
+
+.miw_contact li:nth-child(6) > .label::before {
+  background-image: url(../img/githubsvg.svg);
+}
+
+.miw_contact li:nth-child(5) > a::after {
+  content: "@LICENCE.MIW";
+  display: block;
+  visibility: visible;
+  font-size: 1rem;
+}
+
+.miw_contact li:nth-child(5) > a {
+  visibility: hidden;
+  font-size: 0;
+}
+
+.miw_contact .label {
+  visibility: hidden;
+  width: 0;
+  height: 0;
+  font-size: 0;
+  margin-right: 27px;
 }
