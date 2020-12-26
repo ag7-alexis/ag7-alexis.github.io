@@ -467,6 +467,7 @@ header > h1::before {
 .tools > ul {
   list-style: none;
   padding: 0 10px;
+  padding-top: 5px;
 }
 
 .button {
