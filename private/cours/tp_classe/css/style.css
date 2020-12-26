@@ -1,0 +1,263 @@
+:root {
+  --side-background-color: #2f3136;
+  --footer-background-color: #292b2f;
+  --main-background-color: #000000;
+  --button-background: #43b581;
+  --button-hover-background: #41a277;
+  --title-font-color: #eeeeee;
+  --text-font-color: #ffffff;
+  --contrast-light-svg: contrast(0.5);
+}
+
+@font-face {
+  font-family: Bebas;
+  src: url(../font/BebasNeue-Regular.ttf);
+}
+
+@font-face {
+  font-family: Sriracha;
+  src: url(../font/Sriracha-Regular.ttf);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: Bebas;
+  color: var(--title-font-color);
+  letter-spacing: 1.5px;
+}
+
+span,
+a,
+p,
+li {
+  font-family: Sriracha;
+}
+
+header > h1 {
+  padding: 5px;
+  word-spacing: 7px;
+  text-align: center;
+}
+
+header > h1::before {
+  content: "";
+  background: url(../img/logosvg.svg);
+  background-size: 100% 50px;
+  height: 50px;
+  width: 100%;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.classroom {
+  display: none;
+}
+
+.promo-2021 {
+  display: block;
+}
+
+.page-wrapper {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "side main-students"
+    ". main-prof"
+    ". main-footer";
+}
+
+.intro {
+  background-color: var(--side-background-color);
+  grid-area: side;
+  position: fixed;
+  height: 100vh;
+  width: 20%;
+  top: 0;
+}
+
+.tools {
+  background-color: var(--footer-background-color);
+  grid-area: side;
+  position: fixed;
+  width: 20%;
+  bottom: 0;
+}
+
+.tools > ul {
+  list-style: none;
+  padding: 15px;
+}
+
+.button {
+  max-width: 196px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 5px;
+  background-color: var(--button-background);
+  height: 50px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: var(--text-font-color);
+}
+
+.button:hover {
+  background-color: var(--button-hover-background);
+  color: var(--text-font-color);
+  text-decoration: none;
+}
+
+.students {
+  background-color: var(--main-background-color);
+  grid-area: main-students;
+}
+
+h2::before {
+  content: "";
+  background: url(../img/volumesvg.svg);
+  background-size: 43px 43px;
+  height: 43px;
+  width: 43px;
+  filter: var(--contrast-light-svg);
+  display: inline-block;
+  margin-right: 5px;
+}
+
+h2 {
+  padding-left: 10px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.classroom ul,
+.teachers ul {
+  display: flex;
+  column-count: 4;
+  margin: 0;
+  padding: 0;
+  flex-flow: wrap;
+}
+
+.classroom > ul > li,
+.teachers > ul > li {
+  width: 25%;
+  padding: 1rem;
+  transition: padding 0.6s;
+}
+
+.classroom > ul > li:hover,
+.teachers > ul > li:hover {
+  transition: padding 0.6s;
+  padding: 0.5rem;
+}
+
+.classroom img,
+.teachers img {
+  width: 100%;
+  height: auto;
+}
+
+.classroom ul > li > ul,
+.teachers ul > li > ul {
+  background-color: var(--side-background-color);
+}
+
+.classroom h4,
+.teachers h4 {
+  background-color: var(--side-background-color);
+  margin: 0;
+}
+
+.sidebar {
+  background-color: var(--main-background-color);
+  grid-area: main-prof;
+}
+
+.footer {
+  background-color: var(--main-background-color);
+  grid-area: main-footer;
+}
+
+.name {
+  background-color: var(--footer-background-color) !important;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.github::after {
+  content: "";
+  background: url(../img/githubsvg.svg);
+  background-size: 35px 35px;
+  height: 35px;
+  width: 35px;
+  filter: var(--contrast-light-svg);
+  display: inline-block;
+  visibility: visible;
+}
+
+.networks_links {
+  display: flex;
+  justify-content: space-around;
+}
+
+.github {
+  visibility: hidden;
+  width: 0;
+  height: 0;
+  font-size: 0;
+}
+
+.linkedin::after {
+  content: "";
+  background: url(../img/linkedinsvg.svg);
+  background-size: 35px 35px;
+  height: 35px;
+  width: 35px;
+  filter: var(--contrast-light-svg);
+  display: inline-block;
+  visibility: visible;
+}
+
+.linkedin {
+  visibility: hidden;
+  font-size: 0;
+}
+
+.teaching {
+  background-color: var(--footer-background-color) !important;
+  color: var(--title-font-color);
+  justify-content: space-around;
+}
+
+.footer {
+  background-color: var(--footer-background-color);
+  padding: 10px;
+}
+
+.footer p,
+.footer span,
+.footer li {
+  color: var(--text-font-color);
+}
+
+.miw_contact > h4 {
+  padding-left: 10px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.miw_contact > h4::before {
+  content: "";
+  background: url(../img/hashtagsvg.svg);
+  background-size: 25px 25px;
+  height: 25px;
+  width: 25px;
+  filter: var(--contrast-light-svg);
+  display: inline-block;
+  margin-right: 5px;
+}
