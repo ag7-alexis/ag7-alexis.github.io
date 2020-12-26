@@ -603,7 +603,7 @@ h2 {
   background-color: var(--footer-background-color);
   padding: 20px 10px;
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
 }
 
 .footer > div {
