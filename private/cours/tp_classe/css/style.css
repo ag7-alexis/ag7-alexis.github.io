@@ -513,6 +513,11 @@ h2 {
   align-items: center;
 }
 
+h2:hover::before {
+  transform: rotate(360deg);
+  transition: transform 0.5s;
+}
+
 .classroom ul,
 .teachers ul {
   display: flex;
@@ -655,6 +660,11 @@ h2 {
   filter: var(--contrast-light-svg);
   display: inline-block;
   margin-right: 5px;
+}
+
+.miw_contact > h4:hover::before {
+  transform: rotate(360deg);
+  transition: transform 0.5s;
 }
 
 .miw_contact li {
