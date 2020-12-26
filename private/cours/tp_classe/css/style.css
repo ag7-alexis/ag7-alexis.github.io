@@ -356,6 +356,17 @@ template {
 /* . */
 
 :root {
+  --side-background-color: #d6d6d6;
+  --footer-background-color: #dbdbdb;
+  --main-background-color: #ffffff;
+  --button-background: #43b581;
+  --button-hover-background: #41a277;
+  --title-font-color: #2b2b2b;
+  --text-font-color: #000000;
+  --contrast-light-svg: contrast(1);
+}
+
+:root[data-theme="dark"] {
   --side-background-color: #2f3136;
   --footer-background-color: #292b2f;
   --main-background-color: #000000;
