@@ -352,6 +352,9 @@ template {
   display: none !important;
 }
 
+/* . */
+/* . */
+
 :root {
   --side-background-color: #2f3136;
   --footer-background-color: #292b2f;
@@ -394,16 +397,17 @@ header > h1 {
   padding: 5px;
   word-spacing: 7px;
   text-align: center;
+  font-size: 0;
 }
 
 header > h1::before {
   content: "";
   background: url(../img/logosvg.svg);
-  background-size: 100% 50px;
-  height: 50px;
+  background-size: 100% 40px;
+  height: 40px;
   width: 100%;
   display: block;
-  margin-bottom: 5px;
+  margin-bottom: 0;
 }
 
 .classroom {
@@ -416,48 +420,53 @@ header > h1::before {
 
 .page-wrapper {
   display: grid;
-  grid-template-columns: 20% 80%;
+  grid-template-columns: 100%;
   grid-template-rows: auto;
   grid-template-areas:
-    "side main-students"
-    ". main-prof"
-    ". main-footer";
+    "main-students"
+    "main-prof"
+    "main-footer";
 }
 
 .intro {
   background-color: var(--side-background-color);
   grid-area: side;
   position: fixed;
-  height: 100vh;
-  width: 20%;
+  height: auto;
+  width: 100%;
   top: 0;
+  z-index: 1;
 }
 
 .tools {
   background-color: var(--footer-background-color);
   grid-area: side;
   position: fixed;
-  width: 20%;
-  bottom: 0;
+  width: 30%;
+  height: 50px;
+  top: 0;
+  right: 0;
+  z-index: 2;
 }
 
 .tools > ul {
   list-style: none;
-  padding: 15px;
+  padding: 0 10px;
 }
 
 .button {
   max-width: 196px;
   margin: 0 auto;
+  justify-content: center;
   text-align: center;
-  padding: 5px;
+  padding: 0px;
   background-color: var(--button-background);
   height: 50px;
   border-radius: 10px;
   display: flex;
   align-items: center;
-  text-decoration: none;
   color: var(--text-font-color);
+  font-size: 0.8rem;
 }
 
 .button:hover {
@@ -467,6 +476,7 @@ header > h1::before {
 }
 
 .students {
+  padding-top: 50px;
   background-color: var(--main-background-color);
   grid-area: main-students;
 }
@@ -491,7 +501,7 @@ h2 {
 .classroom ul,
 .teachers ul {
   display: flex;
-  column-count: 4;
+  column-count: 2;
   margin: 0;
   padding: 0;
   flex-flow: wrap;
@@ -499,7 +509,7 @@ h2 {
 
 .classroom > ul > li,
 .teachers > ul > li {
-  width: 25%;
+  width: 50%;
   padding: 1rem;
   transition: padding 0.6s;
 }
@@ -555,6 +565,7 @@ h2 {
 }
 
 .networks_links {
+  padding-top: 5px !important;
   display: flex;
   justify-content: space-around;
 }
@@ -592,11 +603,11 @@ h2 {
   background-color: var(--footer-background-color);
   padding: 20px 10px;
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: column-reverse;
 }
 
 .footer > div {
-  width: 50%;
+  width: 100%;
 }
 
 .footer p,
@@ -609,6 +620,7 @@ h2 {
   padding-left: 10px;
   display: inline-flex;
   align-items: center;
+  font-size: 1.2rem;
 }
 
 .miw_contact > h4::before {
@@ -683,3 +695,78 @@ h2 {
   font-size: 0;
   margin-right: 27px;
 }
+
+@media screen and (min-width: 768px) {
+  .page-wrapper {
+    grid-template-columns: 20% 80%;
+    grid-template-areas:
+      "side main-students"
+      ". main-prof"
+      ". main-footer";
+  }
+
+  .intro {
+    background-color: var(--side-background-color);
+    grid-area: side;
+    position: fixed;
+    height: 100vh;
+    width: 20%;
+    top: 0;
+  }
+
+  .tools {
+    background-color: var(--footer-background-color);
+    grid-area: side;
+    position: fixed;
+    width: 20%;
+    bottom: 0;
+    height: auto;
+    left: 0;
+    top: unset;
+  }
+
+  .students {
+    padding-top: 0;
+  }
+
+  header > h1 {
+    font-size: 1.8rem;
+  }
+
+  header > h1::before {
+    background-size: 100% 50px;
+    height: 50px;
+    margin-bottom: 5px;
+  }
+
+  .tools > ul {
+    list-style: none;
+    padding: 15px;
+  }
+
+  .button {
+    font-size: 1rem;
+    padding: 5px;
+  }
+
+  .classroom ul,
+  .teachers ul {
+    column-count: 4;
+  }
+
+  .classroom > ul > li,
+  .teachers > ul > li {
+    width: 25%;
+  }
+
+  .footer {
+    flex-direction: row-reverse;
+  }
+
+  .footer > div {
+    width: 50%;
+  }
+}
+/* 
+@media screen and (min-widht: 992px) {
+} */
