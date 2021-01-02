@@ -348,7 +348,7 @@ template {
   }
   .extra1 {
     display: block;
-    animation: 0s hidde-loading 3s forwards;
+    animation: 0s hidde-loading 2s forwards;
     position: fixed;
     height: 100%;
     width: 100%;
@@ -359,7 +359,7 @@ template {
   }
   .extra2 {
     position: fixed;
-    animation: 0s hidde-loading 3s forwards;
+    animation: 0s hidde-loading 2s forwards;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
@@ -374,7 +374,7 @@ template {
   .extra2::after {
     content: "";
     background: url(../img/discordsvg.svg);
-    animation: 3s icon-color;
+    animation: 2s icon-color;
     background-size: 43px 43px;
     height: 43px;
     width: 43px;
@@ -387,7 +387,7 @@ template {
   img,
   li {
     height: 0;
-    animation: 0ms reduce-size 3s forwards;
+    animation: 0ms reduce-size 2s forwards;
   }
   @keyframes reduce-size {
     to {
@@ -763,16 +763,16 @@ template {
     display: none;
   }
   .classroom > ul > li {
-    width: 20%;
+    width: 22%;
     display: inline-block;
-    margin: 10px;
+    margin: 5px;
   }
   ul {
     text-align: center;
   }
   img {
-    width: 100%;
-    height: auto;
+    width: auto;
+    max-height: 100px;
   }
   h1,
   h2,
