@@ -1,4 +1,0 @@
-User-agent : *
-Allow : /
-
-Sitemap: https://ag7-alexis.github.io/sitemap.xml
