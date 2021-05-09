@@ -93,14 +93,5 @@
      <ror:sortOrder>1</ror:sortOrder>
      <ror:resourceOf>sitemap</ror:resourceOf>
 </item>
-<item>
-     <link>https://ag7-alexis.github.io/MIWWeatherMap/</link>
-     <title>MIW WeatherMap</title>
-     <description>Données météo en temps réel depuis la première communauté de stations météo personnelles au monde.</description>
-     <ror:updatePeriod></ror:updatePeriod>
-     <ror:sortOrder>2</ror:sortOrder>
-     <ror:resourceOf>sitemap</ror:resourceOf>
-</item>
 </channel>
 </rss>
-  
