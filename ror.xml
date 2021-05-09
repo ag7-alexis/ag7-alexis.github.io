@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:ror="http://rorweb.com/0.1/" >
+<channel>
+  <title>ROR Sitemap for https://ag7-alexis.github.io/</title>
+  <link>https://ag7-alexis.github.io/</link>
+
+<item>
+     <link>https://ag7-alexis.github.io/</link>
+     <title>Portfolio d&amp;#x27;Alexis Guay - Développeur Web Junior</title>
+     <description>Mon portfolio de développeur web junior présente une grande partie des projets sur lesquels j&amp;#x27;ai pu travailler.</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>0</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://ag7-alexis.github.io/technologies/</link>
+     <title>Les technologies utilisées par un développeur web</title>
+     <description>La liste des technologies que j&amp;#x27;apprécie utiliser en tant que développeur présenter dans mon portfolio.</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://ag7-alexis.github.io/projects/</link>
+     <title>Les projets d&amp;#x27;un développeur web </title>
+     <description>Dans mon portfolio vous pourrez retrouver une sélections des projets sur lesquels j&amp;#x27;ai travaillé en tant que développeur web.</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://ag7-alexis.github.io/project/localio/</link>
+     <title>Projet Localio par des développeurs web juniors</title>
+     <description>Plateforme de mise en relation entre commerçants et clients. Elle permet de retrouver les commerces qui correspondent à vos besoins et votre situation géographique.
+</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://ag7-alexis.github.io/project/ag7-project/</link>
+     <title>Projet AG7-Project présenté dans mon portfolio</title>
+     <description>Application web de gestion de projet suivant la méthode Kanban. Elle permet au utilisateur de s&amp;#x27;inscrire, gérer leurs projets et partager leur accès à d&amp;#x27;autres utilisateurs.</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://ag7-alexis.github.io/project/weather-map/</link>
+     <title>Weather Map le projet de développeur web</title>
+     <description>Application web permettant de consulter les données météorologiques collectées dans le monde entier grâce aux stations météo Netatmo qui partagent leurs données.</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://ag7-alexis.github.io/project/ag7-geoapi/</link>
+     <title>AG7-GeoApi par un développeur web</title>
+     <description>API publique permettant d&amp;#x27;obtenir des données géographique, tel que la liste des communes. Les utilisateurs peuvent obtenir une clé d&amp;#x27;API pour utiliser l&amp;#x27;API dans leur projet.</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://ag7-alexis.github.io/project/portfolio/</link>
+     <title>Project de portfolio d&amp;#x27;un développeur web</title>
+     <description>Il s&amp;#x27;agit de mon portfolio de développeur web présentant certains projets sur lesquels j&amp;#x27;ai apprécié travailler ainsi que mes différentes expériences. Ce portfolio a été créé selon l&amp;#x27;architecture de la JAMStack.</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://ag7-alexis.github.io/project/ag7-chat/</link>
+     <title>Projet AG7-Chat pour communiquer entre développeur web</title>
+     <description>Application web inspiré fortement de Messenger permettant d&amp;#x27;envoyer des messages à d&amp;#x27;autres utilisateurs. Les utilisateurs peuvent aussi ajouter des contacts et modifier leur photo de profil.</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://ag7-alexis.github.io/project/ag7-jobhunt/</link>
+     <title>AG7-JobHunt un projet présenté dans mon portfolio</title>
+     <description>Application web qui permet de gérer des offres d&amp;#x27;emploi pour les développeurs. Les utilisateurs peuvent avoir différents rôles par exemple un manager pourra ajouter des offres d&amp;#x27;emploi.</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://ag7-alexis.github.io/project/miw-classroom/</link>
+     <title>Projet MIW Classroom créé par un développeur web</title>
+     <description>Project d&amp;#x27;intégration d&amp;#x27;une page web sans pouvoir modifier le HTML. Tous les étudiants sont partis de la même page avec aucun style et ont carte blanche pour la personnaliser comme on le voulait.</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://ag7-alexis.github.io/MIWWeatherMap/</link>
+     <title>MIW WeatherMap</title>
+     <description>Données météo en temps réel depuis la première communauté de stations météo personnelles au monde.</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+</channel>
+</rss>
+  
