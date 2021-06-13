@@ -93,5 +93,13 @@
      <ror:sortOrder>1</ror:sortOrder>
      <ror:resourceOf>sitemap</ror:resourceOf>
 </item>
+<item>
+     <link>https://ag7-alexis.github.io/CV_GUAY_Alexis.pdf</link>
+     <title>CV GUAY Alexis</title>
+     <description>CV de GUAY Alexis au format PDF, Développeur web junior</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
 </channel>
 </rss>
